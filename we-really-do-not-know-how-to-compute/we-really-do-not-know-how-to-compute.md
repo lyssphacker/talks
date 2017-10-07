@@ -41,7 +41,7 @@ The real cost of programming is a cost of programmers. Here is a quote from Mr. 
 
 ### Things people worry about
 
-There is lots of things people worry about. People worry about correctness. That is a problem. Is it a real problem? Maybe, probably not. Most things do not have to work. Look at Google. If it makes a mistake, it does not matter, so long if the next time it gets the right answer, or maybe something close to the right answer, reasonable answer. People worry about security. Well they have no idea how to handle security. We will find out for example that humans manage to survive for about 70 years. We are continuously attacked by the parasites. It must be that there something bad things we are doing. It is all in that GB of code. You have to think about that. We certainly have no any good ideas how to make things last for very long time by continuously being attacked by mutating parasites.
+There is lots of things people worry about. People worry about correctness. That is a problem. Is it a real problem? Maybe, probably not. Most things do not have to work. Look at Google. If it makes a mistake, it does not matter, so long if the next time it gets the right answer, or maybe something close to the right answer, reasonable answer. People worry about security. Well they have no idea how to handle security. We will find out for example that humans manage to survive for about 70 years. We are continuously attacked by the parasites. It must be that there are some bad things we are doing. It is all in that GB of code. You have to think about that. We certainly have no any good ideas how to make things last for very long time by continuously being attacked by mutating parasites.
 
 ### Evolvability and modifiability of code 
 
