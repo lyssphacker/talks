@@ -61,6 +61,6 @@ Then you get to things where Lisp gets things better. There is symbolic algebra.
 
 ### [Automatic Differentiation](slides/page_8.pdf)
 
-You can stuff that is even more wild. Did you know that automatic differentiation can be done as a generic extension. 
+You can stuff that is even more wild. Did you know that automatic differentiation can be done as a generic extension? What you do is create hyperreal numbers, numbers that look like x+Δx
 
 
