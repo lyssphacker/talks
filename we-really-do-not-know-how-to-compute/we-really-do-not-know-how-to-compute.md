@@ -11,7 +11,7 @@ Opening remark: We are in a real trouble and have not a foggiest idea how to com
 
 **Most things we are talking about, even here (at [Strange Loop conference](https://www.thestrangeloop.com/about.html)) is obsolete.**
 
-[SLIDE](../slides/page_1.pdf)
+[SLIDE](slides/page_1.pdf)
 
 
 
