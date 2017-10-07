@@ -1,7 +1,7 @@
 
 ## Gerry Sussman's talk given at Strange Loop conference in 2011
 
-Note: This document includes edited transcript of Sussman's talk with associated slided plus my comments and questions.  
+Note: This document includes edited transcript of Sussman's talk with associated slided plus my comments and questions. Document is organized in a way that each section contains Sussman's claims in bold, followed by associated slid and possibly my comments and questions.  
 
 [All slides](http://mcdonnell.mit.edu/sussman_slides.pdf)  
 
