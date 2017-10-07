@@ -97,7 +97,7 @@ But let me go a little furher. What are the other problems? I hate computer lang
 
 ### Why I am pushing this idea?
 
-What can you do with these propagators? I am only pushing this idea, not because I think it is the right answer. I am trying to twist us, so that we can say, this is a different way to think. We have to think 52 different ways to fix this problem. I do not have the answer to get out of this, I do not how to make a machine that can build a person out of a cell. But I think that the problem is that we are stuck for too long diddling with our details, worrying about are type system, and we should be worrying about how to get flexible machines and flexible programming. 
+What can you do with these propagators? I am only pushing this idea, not because I think it is the right answer. I am trying to twist us, so that we can say, this is a different way to think. We have to think 52 different ways to fix this problem. I do not have the answer to get out of this, I do not know how to make a machine that can build a person out of a cell. But I think that the problem is that we are stuck for too long diddling with our details, worrying about are type system, and we should be worrying about how to get flexible machines and flexible programming. 
 
 ### [Multidirectional Constraints](slides/page_21.pdf)
 
