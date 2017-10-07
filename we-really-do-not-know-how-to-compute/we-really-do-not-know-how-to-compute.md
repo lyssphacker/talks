@@ -5,7 +5,7 @@ at [Strange Loop conference](https://www.thestrangeloop.com/about.html), 2011
 
 Note: This document includes edited transcript of Sussman's talk with associated slided plus my comments and questions. Document is organized in a way that each section contains Sussman's claims in bold, followed by associated slid and possibly my comments and questions.  
 
-[All slides](http://mcdonnell.mit.edu/sussman_slides.pdf)  
+[All slides](slides/slides.pdf)  
 
 Opening remark: We are in a real trouble and have not the foggiest idea how to compute very well. There might some glimmer of hope on the horizon, in number of different direction, some of which I might point out.  
 
@@ -46,6 +46,8 @@ There is lots of things people worry about. People worry about correctness. That
 ### Evolvability and modifiability of code 
 
 The other thing that seems really important to me is that we spend all our time modifiying our existing code. The problem is that our code is not adequately evolvable and modifiable to fit the future. In fact, what we want is to make systems that have the property that they are good for things that the designer did not even think of or intend. That is a big problem. That is a real problem I want to after a little bit. The problem is that when we build systems we program ourselves into holes. I have done it a number of times. I have been programming since 1961, and found more ways to screw up that anybody I know. I learned a lot I hope but not an infinite amount. So here is this problem. How do we keep ourselves from programming ourselves into holes. What does that mean? It means that we make decisions early into some process that spread all over our system. The consequences of those decisions are such that the things we want to change later are difficult to change becaue we have to change very large amount of stuff. That is the problem. I want to figure out ways we can organize systems so that the consequences of the decisions we make are not expensive to change. We cannot avoid making decisions, but we can try to figure out ways to minimize the cost of changing decisions we made.
+
+### [Traditional generic arithmetic in Scheme](slides/page_5.pdf)
 
 
 
