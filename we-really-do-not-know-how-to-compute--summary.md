@@ -1,7 +1,7 @@
 
-## Summary of Gerry Sussman's talk given at Strange Loop conference in 2011
+## Gerry Sussman's talk given at Strange Loop conference in 2011
 
-Note: this summary will mostly include Sussman's claims with my comments trying to expand on some topics, ask some questions, etc.
+Note: This document includes edited transcript of Sussman's talk with associated slided plus my comments and questions.  
 
 [Associated slides](http://mcdonnell.mit.edu/sussman_slides.pdf)  
 
