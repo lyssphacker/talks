@@ -3,7 +3,7 @@
 
 Note: This document includes edited transcript of Sussman's talk with associated slided plus my comments and questions.  
 
-[Associated slides](http://mcdonnell.mit.edu/sussman_slides.pdf)  
+[All slides](http://mcdonnell.mit.edu/sussman_slides.pdf)  
 
 Opening remark: We are in a real trouble and have not a foggiest idea how to compute very well.  
 
