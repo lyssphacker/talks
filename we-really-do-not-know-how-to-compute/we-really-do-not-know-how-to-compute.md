@@ -109,4 +109,4 @@ Once I can do that I can go back to my electricity stuff. A resistor really is a
 
 ### [All Operators are Extensible Generics](slides/page_23.pdf)
 
-But the crucial thing here is what I said before, what Mr. Radul invented 2 or 3 years ago, for his doctoral theses, the idea that cells merge information monotonically. I am going to tell you the story [43:04](http://www.youtube.com/watch?v=O3tVctB_VSU&t=43m4s)
+But the crucial thing here is what I said before, what Mr. Radul invented 2 or 3 years ago, for his doctoral thesis, the idea that cells merge information monotonically. I am going to tell you the story [43:04](http://www.youtube.com/watch?v=O3tVctB_VSU&t=43m4s)
