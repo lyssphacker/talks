@@ -8,3 +8,5 @@ Note: this summary will mostly include Sussman's claims with my comments trying 
 Opening remark: We are in a real trouble and have not a foggiest idea how to compute very well.  
 
 ### Most things we are talking about, even here (at [Strange Loop conference](https://www.thestrangeloop.com/about.html)) is obsolete.
+
+
