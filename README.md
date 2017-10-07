@@ -1,1 +1,1 @@
-Various interesting things from Gerry Sussman
+Summaries, transcripts and comments on various interesting talks.
