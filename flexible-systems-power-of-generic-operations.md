@@ -1,7 +1,7 @@
 
 [Flexible Systems The Power of Generic Operations](https://www.youtube.com/watch?v=cblhgNUoX9M)  
 by Gerald Jay Sussman  
-given at [LispNYC meeeing](https://www.meetup.com/LispNYC/events/227620989/?_cookie-check=8KI918CyErqAITjD)  
+given at [LispNYC meeting](https://www.meetup.com/LispNYC/events/227620989/?_cookie-check=8KI918CyErqAITjD)  
 
 Abstract
 
