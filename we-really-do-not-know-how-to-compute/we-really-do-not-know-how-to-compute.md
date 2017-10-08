@@ -7,11 +7,9 @@ Note: This document includes sligthly edited transcript of Sussman's talk with a
 
 [All slides](slides/slides.pdf)  
 
-### Opening remark
+### [Opening remark](slides/page_1.pdf)
 
 We are in a real trouble and have not the foggiest idea how to compute very well. There might some glimmer of hope on the horizon, in number of different direction, some of which I might point out.  
-
-[Opening slide](slides/page_1.pdf)
 
 ### Most things are obsolete
 
