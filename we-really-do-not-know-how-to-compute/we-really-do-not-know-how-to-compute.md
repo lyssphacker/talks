@@ -143,3 +143,4 @@ I am claiming the problem facing us as computer engineers is not correctness, it
 [Propagating, artfully](https://kratofragments.wordpress.com/2014/06/13/propagating-artfully/)  
 [Talk notes: We Really Don't Know How to Compute! Gerald Sussman 2011](http://limist.com/coding/talk-notes-we-really-dont-know-how-to-compute-gerald-sussman-2011.html)  
 [Towards Context-Aware Propagators](http://ibaino.net/talks/cop_ecoop.pdf)  
+[My comments](my-comments.md)  
