@@ -134,3 +134,7 @@ I am claiming the problem facing us as computer engineers is not correctness, it
 #### Some related links
 
 [Propagator-Based Computing, A Programming Foundation for Decentralized Systems](http://grantome.com/grant/NSF/CNS-1116294)
+[The Art of the Propagator](https://groups.csail.mit.edu/mac/users/gjs/6.945/readings/art.pdf)  
+[Propagation Networks: A Flexible and Expressive Substrate for Computation](http://web.mit.edu/~axch/www/phd-thesis.pdf)  
+[Propagator System Documentation](http://groups.csail.mit.edu/mac/users/gjs/propagators)  
+[Propagator System code and documentation tarball[http://groups.csail.mit.edu/mac/users/gjs/propagators/propagator.tar)  
