@@ -13,7 +13,7 @@ We are in a real trouble and have not the foggiest idea how to compute very well
 
 ### Most things are obsolete
 
-Most things we are talking about, even here, are obsolete. As I said to somebody at the yesterday's Haskell session: this is the most advanced of the obsolete languages.
+Most things we are talking about, even here, are obsolete. As I said to somebody at the yesterday's Haskell session: this is the most advanced of obsolete languages.
 
 ### [Kanizsa’s Triangle Illusion](slides/page_2.pdf)
 
