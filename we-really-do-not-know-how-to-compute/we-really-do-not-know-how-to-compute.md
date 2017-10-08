@@ -133,6 +133,7 @@ I am claiming the problem facing us as computer engineers is not correctness, it
 
 #### Some related links:
 
+[Quora question](https://www.quora.com/What-does-Alan-Kay-think-about-Gerry-Sussmans-recent-talk-at-the-Strange-Loop-conference-titled-We-Really-Dont-Know-How-to-Compute/)  
 [Propagator-Based Computing, A Programming Foundation for Decentralized Systems](http://grantome.com/grant/NSF/CNS-1116294)  
 [The Art of the Propagator](https://groups.csail.mit.edu/mac/users/gjs/6.945/readings/art.pdf)  
 [Propagation Networks: A Flexible and Expressive Substrate for Computation](http://web.mit.edu/~axch/www/phd-thesis.pdf)  
