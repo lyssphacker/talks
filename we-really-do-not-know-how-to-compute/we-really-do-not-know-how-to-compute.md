@@ -1,7 +1,7 @@
 
 ## [We Really Don't Know How to Compute!](https://www.youtube.com/watch?v=O3tVctB_VSU)
 by [Gerry Sussman](http://groups.csail.mit.edu/mac/users/gjs)  
-at [Strange Loop conference](https://www.thestrangeloop.com/about.html), 2011  
+at [Strange Loop conference](https://www.thestrangeloop.com/about.html) on Oct 27, 2011
 
 Note: This document includes sligthly edited transcript of Sussman's talk with associated slides. It is organized around topics discussed.    
 
