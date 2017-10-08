@@ -17,7 +17,7 @@ Most things we are talking about, even here, are obsolete. As I said to somebody
 
 ### [Kanizsa’s Triangle Illusion](slides/page_2.pdf)
 
-You now see the triange that is not there. What did you do? It took only 100 or maybe 200 ms, or few tens of neuron times. I do not care how parallel the machine is. I do have the foggiest idea how to write a program that organizes complex process like that in the latency of about 30 or 40 steps. That is the example of something we do not understand how to do.  
+You now see the triange that is not there. What did you do? It took only 100 or maybe 200 ms, or few tens of neuron times. I do not care how parallel the machine is. I do not have the foggiest idea how to write a program that organizes complex process like that in the latency of about 30 or 40 steps. That is the example of something we do not understand how to do.  
 
 ### Human genome
 
