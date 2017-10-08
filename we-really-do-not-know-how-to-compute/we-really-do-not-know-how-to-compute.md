@@ -3,7 +3,7 @@
 by [Gerry Sussman](http://groups.csail.mit.edu/mac/users/gjs)  
 at [Strange Loop conference](https://www.thestrangeloop.com/about.html), 2011  
 
-Note: This document includes edited transcript of Sussman's talk with associated slided plus my comments and questions. Document is organized in a way that each section contains Sussman's claims in bold, followed by associated slid and possibly my comments and questions.  
+Note: This document includes sligthly edited transcript of Sussman's talk with associated slided. It is organized around topics discussed.    
 
 [All slides](slides/slides.pdf)  
 
