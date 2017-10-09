@@ -27,7 +27,7 @@ I will illustrate these ideas with techniques for formalizing some problem-solvi
 
 The propagation model of computation supports an appropriate infrastructure, a kind of plumbing for building such systems.
 
-### Introduction (by [Chris Hanson](https://people.csail.mit.edu/cph/)
+### Introduction (by [Chris Hanson](https://people.csail.mit.edu/cph/))
 
 This is Gerald Jay Sussman, my mentor and good friend, who has probably taught at least a few people in here. He is one of Marvin Minsky's early students, has done a lot of interesting things in his life and he is going to tell us about the latest stuff he has been thinking about. 
 
