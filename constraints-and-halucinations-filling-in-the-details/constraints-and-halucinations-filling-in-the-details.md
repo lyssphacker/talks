@@ -3,8 +3,6 @@
 by Gerald Jay Sussman  
 given at Google sometime in 2013  
 
-All slides can be found [here](slides/slides.pdf).  
-
 Abstract:  
 
 Ever since I was an MIT undergraduate I have been pursuing several overlapping goals:
@@ -28,3 +26,7 @@ It will turn out that appropriately configured constraint networks can be a para
 I will illustrate these ideas with techniques for formalizing some problem-solving strategies. It will be necessary to interweave yet separate the results of a computation and the strategy by which it is accomplished. Some deductions are strategic deductions and some are actual result deductions. To effectively represent strategies it will be necessary for propositions to be able to refer to other propositions. For example, rules will have to be able to be triggered in the case that the belief status of a proposition is unknown.
 
 The propagation model of computation supports an appropriate infrastructure, a kind of plumbing for building such systems.
+
+#### Some related links:
+
+[Somewhat related slides](slides/slides.pdf).  
