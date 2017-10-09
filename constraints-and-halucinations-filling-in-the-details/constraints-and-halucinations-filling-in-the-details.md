@@ -1,7 +1,9 @@
 
-[Constraints and Hallucinations: Filling in the Details](https://www.youtube.com/watch?v=mwxknB4SgvM)  
+## [Constraints and Hallucinations: Filling in the Details](https://www.youtube.com/watch?v=mwxknB4SgvM)  
 by Gerald Jay Sussman  
 given at Google sometime in 2013  
+
+All slides can be found [here](slides/slides.pdf).  
 
 Abstract:  
 
