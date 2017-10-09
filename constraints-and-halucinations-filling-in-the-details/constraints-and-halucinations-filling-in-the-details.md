@@ -29,4 +29,4 @@ The propagation model of computation supports an appropriate infrastructure, a k
 
 #### Some related links:
 
-[Somewhat related slides](slides/slides.pdf).  
+[Somewhat related slides](slides/slides.pdf)
