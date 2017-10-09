@@ -33,6 +33,10 @@ This is Gerald Jay Sussman, my mentor and good friend, who has probably taught a
 
 ### Halucinations are necessary in order to perceive
 
+One thing I am going to start with is very old stuff. When I was an undergraduate, which was a long time ago (64-68 at MIT), there was a fellow named Jerome Lettvin, who was a very interesting character. I would go to talk to him occasionally. He had ideas about neurophysiology which were mostly very good and sometimes wrong, but it did not matter cause his stories were so good that it did not matter whether they were right or wrong. They could have been good ways of thinking for lots of things. One of the things I learned from Mr. Lettvin was that almost none of what we perceive is the stuff that is out there. That in fact we make up most of it. And in fact it's essential from his point of view that we have make up the content. So I want to talk about filling in details and that basically hallucinations are necessary in order to perceive. Then I want to show how that leads to invention of a kind of system for doing reasoning which is not unusual but which mirrors that way of the working with the world. 
+
+### [Cognition involves filling in details](slides/cognition-involves-filling-in-details.png)
+
 
 
 #### Some related links:
