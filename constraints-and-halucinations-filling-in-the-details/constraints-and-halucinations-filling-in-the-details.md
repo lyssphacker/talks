@@ -55,7 +55,7 @@ Here is the one I got involved in 1975 with my friend Richard Stallman, who is b
 
 You are at home in your bedroom and elephant appears just in from of your bedroom door, can elephant come into the bedroom with you? Why not? The reason is that the elephant is to big to get throught the door. You look at the thing and say, my door is not big enough to do that. You are constructing a visual image, which then being run by your visual system, and then being analyzed in such a way to produce the answer to this question. This is another example of such a thing. 
 
-### [Not enought time!](slides/not-enough-time.png)
+### [Not enough time!](slides/not-enough-time.png)
 
 Here is really interesting thing. What is your name? That was 500 ms at most between when I finished the answer and he answered. Neuron time is about 5 or 10 ms. The fastest the neuron can do. That is few 10s of steps. I do not know how to make a computer ... I do not care how parallel the computer is (that is completely different question) ... how do I solve the problem of doing, phonology, morphology of words, the syntax, semantics and problem solving, back to the syntax, back to morphology of words, back to phonology, and then produce the muscle movements to answer the question, in 500 ms? There is not enough time. It means we do not know how to compute. That is one of things that was bodering me for a while. Yes, our computers are billion times faster than that, step by step, but that does not help when you look at the problem like this. We really do not understand what we are doing which I think is very important. 
 
