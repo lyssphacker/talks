@@ -41,6 +41,28 @@ One of the observations is that in order to see or perceive things you better fi
 
 ### [Kanizsa's Triangle Illusion](slides/kanizsa-triangle.png)
 
+Do you see the triangle that is not there. Everybody knows that isn't there, however you see it very well. This is an important observation. Btw., we know that bees do that also. They can see Kanizsa's triangle, but pigeons do not. This is sort of a wiring thing. Bees have been tested. You trans bunch of bees to go to a place where there is sugar water and one of these images (with a triangle), and you move that around, and eventually you see that bees go to the Kanzsa's triangle. Well, there are clues here, there are local clues. 
+
+### [Cognition fills in details](slides/cognition-fills-in-details.png)
+
+[David Waltz](https://en.wikipedia.org/wiki/David_Waltz), great wizard of when I was a graduate student, invented a mechanism of being able to label line drawings so that you can image that there a 3D objects. If you look at [this](slides/cognition-fills-in-details.png), this a line that is sticking out at you, "-" is inside, so this is some kind of depression in a surface. This means it is an open area, that behind this is nothing, so this is a hole that goes all the way through. For this one over here, we are looking at something that is floating in space and is coming up which is like truncated pyramid. This one is on the table and is a truncated pyramid. These are little programs which Waltz wrote, which were beautiful, which could take a bunch of lines and produce these labelings. The way they did it is quite clear. In this (lower right case), all possible labelings of that corner are known - there is some kind of catalog of them. All possible labelings of any corner are known. There has to be consistency. When lines come together, they have to be the same label, and that is the whole thing. It is very much like with the Kanizsa's triangle, that local evidence is put together to make a global interpretation. 
+
+### [Circuit Analysis is filling in details](slides/circuit-analysis-is-filling-in-details.png)
+
+Here is the one I got involved in 1975 with my friend Richard Stallman, who is btw the reason why you have free software. In fact, your company is probably dependent on him. When I was beginning to be assistant professor at MIT, around 1973 to sometime later there, I was teaching introductory electrical circuits class some of the times and I observed that the teachers did not teach the students what they did. What teachers taught the students is lots of little equations, where you have to make equations for each of the parts, make equations for the way they are hooked together and you solve the equations. But unfortunately that is not what real electrical wizard does, so it was important to figure this out and write a program to do it. Part of my intention was to take the program that is written so clearly that I can give them to students and then they understand how to do it. Let me show you what I do when I see circuit like this ... (follows circuit analysis). I do not want to teach EE here, but I want to show you a method by which I am reasoning. I am using local information and propagate it around as far as I can. I am using the diagram as my memory, i.e. the diagram is finite number of places I can write things and if I am actually doing this job I would be writing down answers that I computed on each of these places, and I can trigger off stuff that is nearby. So that is a local analysis. If that was more complicated, there might be one simultaneous equation, like this feedback. Feedbak amplifier. One equation with one uknown. There might be two equations with two unknowns. That is the most horrible situation I can imagine. That's what real engineers do. 
+
+### [Details apper from all directions](slides/details-appear-from-all-directions.png)
+
+You are at home in your bedroom and elephant appears just in from of your bedroom door, can elephant come into the bedroom with you? Why not? The reason is that the elephant is to big to get throught the door. You look at the thing and say, my door is not big enough to do that. You are constructing a visual image, which then being run by your visual system, and then being analyzed in such a way to produce the answer to this question. This is another example of such a thing. 
+
+### [Not enought time!](slides/not-enough-time.png)
+
+Here is really interesting thing. What is your name? That was 500 ms at most between when I finished the answer and he answered. Neuron time is about 5 or 10 ms. The fastest the neuron can do. That is few 10s of steps. I do not know how to make a computer ... I do not care how parallel the computer is (that is completely different question) ... how do I solve the problem of doing, phonology, morphology of words, the syntax, semantics and problem solving, back to the syntax, back to morphology of words, back to phonology, and then produce the muscle movements to answer the question, in 500 ms? There is not enough time. It means we do not know how to compute. That is one of things that was bodering me for a while. Yes, our computers are billion times faster than that, step by step, but that does not help when you look at the problem like this. We really do not understand what we are doing which I think is very important. 
+
+### [Propagation](slides/propagation.png)
+
+So what I am going to tell you about
+
 #### Some related links:
 
 [Somewhat related slides](http://cap.csail.mit.edu/sites/default/files/Sussman.pdf)
