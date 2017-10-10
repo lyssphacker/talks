@@ -77,7 +77,41 @@ I can ask various explanations, like "How do you know this?". Give me level-2 (v
 
 ### [More detail](slides/more-detail.png)
 
-I can ask for more detailed information. Just to give you an idea. Now I am openning up these propagators. 21:00
+I can ask for more detailed information. Just to give you an idea. Now I am openning up these propagators. One of the most wonderful things about this kind of system which Stallman and I discovered way back in 1975 was, one of the best ways to use program that helps you to build electrical circuits or gives you partial analysis of the circuit was you can ask it: "How do you know that?". For example, it is possible that if I am designing one, I specify particular resistor ... suppose I have an amplifier and I want certain amount of output swing ... (follows description of an amplifier). Suppose that there is some contradiction in the design of an amplifier. I would get an argument from the computer - "the following constraints are in contradiction, here is the reason why I cannot work". We actually used that for teaching in some of our electric circuit classes. So getting an argument is a good thing. 
+
+### [Information flows all ways](slides/information-flows-all-ways.png)
+
+What we are seeing here is that John Tonry, who is a professor at University of Hawaii, has an estimate for distance ... If I ask what is the distance now, it actually contains 2 pieces of information because the interval produced by VanDenBergh overlaps the interval produced by Tonry. That overlap meant that there is a better estimate. But better, distance modulus has been also improved because the information that is increased in one of those cells simulated back propagation of information to the other.
+
+### [More sources: Red Shifts](slides/more-sources-red-shifts.png)
+
+We can talk about red shifts ...
+
+### [Hubble Law](slides/hubble-law.png)
+
+Now I can hook it together with Hubble's Law ...
+
+### [Inconsistency and Multiple WorldViews](slides/inconsistency-and-multiple-worldviews.png)
+
+There is even one more thing I am going to add ... There is contradiction between these measurements. Tonry measurement is incompatible with WMAP:1CDM assumption. That is very important because, first of all, at least one of these is wrong. Really important thing is what is truth if I believe one or the other? I should be able to modulate my understanding. I should be able to say, if I believe one set of assumptions, what's true?, if I believe the other set of assumptions, what would be the consequence. There might be programs which might try to resolve this by saying, what are the details on how these interact, is there somebody else who can give me information which will clarify this matter. So you have a program or a person whose job is to look at both points of view, to examine them and see how they fit.
+
+Audience: There is a cycle in this lattice of nodes. How do you decide when to stop propagating information?
+GJS: Because information is monotonically increasing in the cell.
+Audience: So you reach a fixed point.
+GJS: Fixed point, that is right. If the cycle was something like the convergence of square root, it would take a lot of work. For things that I am showing you here, there are one or two steps. 
+
+If I retract Tonry as being the source of information, maybe he was wrong, well then my estimate for my Hubble constant only depends upon WMAP3 and WMAP:1CDM. Whereas if I retract WMAP:1CDM and assert Tonry, then I get Hubble constant being dependent on Tonry and WMAP3. I can imagine a very important consequence of these nice things you can do with propagators, independent of everything else. As you probably know, Ioannidis wrote a paper why almost all medical papers are wrong. Very quick summary of it is, since papers in medical journals require confidence of 95% (1 in 20 experiments are wrong), and since everybody does hunderds of experiments and only publishes once which pass confidence measures, then almost everything in journals is wrong. It is very said. He is probably right. I have been on the advisory board of an organization that deals with multiple sclerosis because I had a student in my class who got it and asked me to be on this advisory board. I heard also horror stories about medical data being wrong for other reasons. Most medical data is collected in Excel spreadsheets. Now, most medical doctors have not a foggisest idea what the Excel spreadsheet actually does. It turns out there is an option with which you can sort a column without ?. Much of the data examined by my friends in multiple sclerosis foundation has been mangled in such a way that can only be explained by this. So there is a lot of very bad stuff out there. I believe we should have shot the guy who wrote Excel but that is not longer available. You can imagine we can do to improve the world is collect a lot of medical papers and journals.
+
+Audience: Presumably, you have all these different measurements, and they are linked behind the scenes by various formalisms.
+GJS: That is right. Imagine a spreadsheet, but one that has all different directions. 
+Audience: There might be a contradiction ...
+GJS: You are saying that maybe formulas are wrong? 
+Audience: Yes.
+GJS: Of course. To be perfectly honest, if we are doing this seriously, the formulas are premises, just like VanDenBergh, etc., but it would be too long to put on the slide. In fact I do it that way. I can attach those as well. 
+Audience: You wind up with exhaustive ...
+GJS: Some of the things you want to be careful about, like in ordinary physics, do you really care whether F = ma being tentative. I would hope not. That was the question of presentation. What do you think are the delicate things of the data that you are invesigating and what are the once for which you can say, I will assume for the sake of argument are correct now? 
+
+### [Dependencies in Logic: Suppes](slides/dependencies-in-logic.png)
 
 #### Some related links:
 
