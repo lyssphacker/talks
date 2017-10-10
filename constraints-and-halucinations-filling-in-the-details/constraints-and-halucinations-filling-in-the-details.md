@@ -77,7 +77,7 @@ I can ask various explanations, like "How do you know this?". Give me level-2 (v
 
 ### [More detail](slides/more-detail.png)
 
-I can ask for more detailed information. 
+I can ask for more detailed information. Just to give you an idea. Now I am openning up these propagators. 
 
 #### Some related links:
 
