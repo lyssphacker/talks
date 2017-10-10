@@ -102,16 +102,18 @@ GJS: Fixed point, that is right. If the cycle was something like the convergence
 
 If I retract Tonry as being the source of information, maybe he was wrong, well then my estimate for my Hubble constant only depends upon WMAP3 and WMAP:1CDM. Whereas if I retract WMAP:1CDM and assert Tonry, then I get Hubble constant being dependent on Tonry and WMAP3. I can imagine a very important consequence of these nice things you can do with propagators, independent of everything else. As you probably know, Ioannidis wrote a paper why almost all medical papers are wrong. Very quick summary of it is, since papers in medical journals require confidence of 95% (1 in 20 experiments are wrong), and since everybody does hunderds of experiments and only publishes once which pass confidence measures, then almost everything in journals is wrong. It is very said. He is probably right. I have been on the advisory board of an organization that deals with multiple sclerosis because I had a student in my class who got it and asked me to be on this advisory board. I heard also horror stories about medical data being wrong for other reasons. Most medical data is collected in Excel spreadsheets. Now, most medical doctors have not a foggisest idea what the Excel spreadsheet actually does. It turns out there is an option with which you can sort a column without ?. Much of the data examined by my friends in multiple sclerosis foundation has been mangled in such a way that can only be explained by this. So there is a lot of very bad stuff out there. I believe we should have shot the guy who wrote Excel but that is not longer available. You can imagine we can do to improve the world is collect a lot of medical papers and journals.
 
-Audience: Presumably, you have all these different measurements, and they are linked behind the scenes by various formalisms.
-GJS: That is right. Imagine a spreadsheet, but one that has all different directions. 
-Audience: There might be a contradiction ...
-GJS: You are saying that maybe formulas are wrong? 
-Audience: Yes.
-GJS: Of course. To be perfectly honest, if we are doing this seriously, the formulas are premises, just like VanDenBergh, etc., but it would be too long to put on the slide. In fact I do it that way. I can attach those as well. 
-Audience: You wind up with exhaustive ...
-GJS: Some of the things you want to be careful about, like in ordinary physics, do you really care whether F = ma being tentative. I would hope not. That was the question of presentation. What do you think are the delicate things of the data that you are invesigating and what are the once for which you can say, I will assume for the sake of argument are correct now? 
+Audience: Presumably, you have all these different measurements, and they are linked behind the scenes by various formalisms.  
+GJS: That is right. Imagine a spreadsheet, but one that has all different directions.   
+Audience: There might be a contradiction ...  
+GJS: You are saying that maybe formulas are wrong?   
+Audience: Yes.  
+GJS: Of course. To be perfectly honest, if we are doing this seriously, the formulas are premises, just like VanDenBergh, etc., but it would be too long to put on the slide. In fact I do it that way. I can attach those as well.   
+Audience: You wind up with exhaustive ...  
+GJS: Some of the things you want to be careful about, like in ordinary physics, do you really care whether F = ma being tentative. I would hope not. That was the question of presentation. What do you think are the delicate things of the data that you are invesigating and what are the once for which you can say, I will assume for the sake of argument are correct now?   
 
 ### [Dependencies in Logic: Suppes](slides/dependencies-in-logic.png)
+
+34:30
 
 #### Some related links:
 
