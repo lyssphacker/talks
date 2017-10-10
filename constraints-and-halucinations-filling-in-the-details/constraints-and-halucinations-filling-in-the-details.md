@@ -61,7 +61,7 @@ Here is really interesting thing. What is your name? That was 500 ms at most bet
 
 ### [Propagation](slides/propagation.png)
 
-So what I am going to tell you about
+So what I am going to tell you about a particular model of computation which is modelling what I am talking about. I am imagining a mechanism made out of a lot of little autonomous machines. Each machine is basically looking at neighbors, little cells (not biological) that connects to. Cells contain information. When information appears in some of the cells, a propagator might say, oh that is enough information for me to change something else. That is all. Nice property of the model is that it is scalable. Because everything is nice and local like this, it also turns out that it can avoid lots of the problems of parallelism when you are trying simulate serial things with parallel. The hard thing is not making parallel machine, the hard thing is to simulate serial process on the parallel machine. If we realize that what we really want to do is write parallel processes in general, this problem mostly goes away.
 
 #### Some related links:
 
