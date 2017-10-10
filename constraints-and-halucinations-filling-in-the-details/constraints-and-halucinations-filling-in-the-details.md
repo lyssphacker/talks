@@ -73,6 +73,12 @@ I am going to make up some propagator cells. Specifically, I am gong to make up 
 
 ### [Simple explanations](slides/simple-explanations.png)
 
+I can ask various explanations, like "How do you know this?". Give me level-2 (very simple) explanation. It says a stupid thing, how it got it. 
+
+### [More detail](slides/more-detail.png)
+
+I can ask for more detailed information. 
+
 #### Some related links:
 
 [Somewhat related slides](http://cap.csail.mit.edu/sites/default/files/Sussman.pdf)
