@@ -69,7 +69,9 @@ I am going to give an example which is purely about how to use propagators ... I
 
 ### [Propagation carries provenance](slides/propagation-carries-provenance.png)
 
-I am going to make up some propagator cells. Specifically, I am gong to make up a cell for something call the distance modulus. You do not have to know anything about what these things mean. It is not relevant what they mean, I want you to see how things are hooked together. So, I have a distance moduls and a distance cell. Distance modulus is something that you measure by looking at the intensity of the light coming from this object and having an estimate of the actual absolute luminosity. ... 18:00
+I am going to make up some propagator cells. Specifically, I am gong to make up a cell for something call the distance modulus. You do not have to know anything about what these things mean. It is not relevant what they mean, I want you to see how things are hooked together. So, I have a distance moduls and a distance cell. Distance modulus is something that you measure by looking at the intensity of the light coming from this object and having an estimate of the actual absolute luminosity. ... Here is propagator called constraint propagator (c:mu<->d) which connects those two. I am wiring them together. Imagine these little machines being made. This propagator looking at these cells and saying ... um, is there anything happening. I am going to tell distance-modulus that the value is 31.4 +- .3 in some unit, and it has been told to us by VanDenBergh1985 when he took some images. He produced a big table you can find in literature. ... I can now ask what is M87:distance in Mpc. What you see immediately from here that I got this infromation by propagation from there. Provenance is being carried. 
+
+### [Simple explanations](slides/simple-explanations)
 
 #### Some related links:
 
