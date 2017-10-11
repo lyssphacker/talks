@@ -121,7 +121,7 @@ Suppose we are talking about logic anymore, but usefule rule, rule-based systems
 
 ### [States of Belief of Propositions](slides/states-of-belief-of-propositions.png)
 
-
+Propositions have more than just true or false.
 
 #### Some related links:
 
