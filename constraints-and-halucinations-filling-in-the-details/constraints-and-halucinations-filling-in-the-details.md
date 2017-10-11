@@ -138,7 +138,18 @@ GJS: Yes, of course. That can be true too. I am showing you an application.
 Audience: In that situation known and unknown are not used?  
 GJS: In that one I did not tell you anything about known or unknown. That was purely numerical intervals being partial information structure.   
 Audience: I wonder how are known and unknown as infrastrucure being used in that computation.  
-GJS: They are not. This is about propositions. And the is a rule system with the infrastruture, sometimes the underlying library being a propagator system allowing the manipulation of unknowns and knowns and all that. 51:08
+GJS: They are not. This is about propositions. And the is a rule system with the infrastruture, sometimes the underlying library being a propagator system allowing the manipulation of unknowns and knowns and all that. 
+Audience: You shown 2 examples and this is the machinery for the second example, is that right?  
+GJS: I have shown you the example, I haven't shown you the machinery - this is by itself complicated. I have shown you none of the machinery. This is rule written for a rule-based system that is built on top of the propagator system.  
+
+The rule the ability to control forward chaining by needed result and control backward chaining by available facts. 
+
+Audience: Analogous to Prolog in some way, you come to make sure your system ...  
+GJS: No, it might take forever and Prolog often does and the reason is that Prolog is doing pure backward chaining with chronological backtracking (btw. this is doing smart backtracking, dependency-directed backtracking), is the same thing as in the SAT solver you would call that clausal learning, but that is a separate issue ... it is already under the table. The crucial thing going on here is that this is doing mostly foward reasoning, mostly antecedent reasoning, and the reason why it is doing that is because the statement I want to show something, is the statement that I might or might not know, I might now care about, but it is there ...
+
+[So What](slides/so-what.png)
+
+The idea I have shown you is plumbing, that is all it is. The nice thing about the plumbing is that, unlike logic, does not have ontological assumptions. Writing programs in Prolog is hell, to be perfectly honest. 
 
 #### Some related links:
 
