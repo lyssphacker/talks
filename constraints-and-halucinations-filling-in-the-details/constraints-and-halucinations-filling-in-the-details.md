@@ -131,13 +131,13 @@ I can write rules like this. This is the game of the restaurant thing. This is n
 
 If I have handles, if I have name, a way of grabbing a proposition, and I have dependencies that say what that proposition depends upon, what the premises (not the argument) that it depends upon, the I get control of the situation. Imagine how this works. These are propositions, "please-show ?b" - somebody wants the answer b. It was asserted. It is a piece of information. When this rule fires, g is bound to the acceptedness of that proposition, i.e. whoever is doing this deduction belives that. It will only fire if that acceptedness turns out to be true. In the context of this rule other rules are created. ... I am controlling the deductions being made by depending on thing I already know and what things I need, and these things are intervowen in some nice way. 
 
-Audience: Is this the same system as in your astronomical example?
-GJS: Astronomical example showed you propagator system. This is showing you problem solver built in propagator system as the infrastructure. Propagator system is being used to represent these cells which are being manipulated to carry the dependencies. 
-Audience: In you initial example, there was more than stating known and unknown, ranges ...
-GJS: Yes, of course. That can be true too. I am showing you an application. 
-Audience: In that situation known and unknown are not used?
-GJS: In that one I did not tell you anything about known or unknown. That was purely numerical intervals being partial information structure. 
-Audience: I wonder how are known and unknown as infrastrucure being used in that computation.
+Audience: Is this the same system as in your astronomical example?  
+GJS: Astronomical example showed you propagator system. This is showing you problem solver built in propagator system as the infrastructure. Propagator system is being used to represent these cells which are being manipulated to carry the dependencies.   
+Audience: In you initial example, there was more than stating known and unknown, ranges ...  
+GJS: Yes, of course. That can be true too. I am showing you an application.   
+Audience: In that situation known and unknown are not used?  
+GJS: In that one I did not tell you anything about known or unknown. That was purely numerical intervals being partial information structure.   
+Audience: I wonder how are known and unknown as infrastrucure being used in that computation.  
 GJS: They are not. This is about propositions. And the is a rule system with the infrastruture, sometimes the underlying library being a propagator system allowing the manipulation of unknowns and knowns and all that. 51:08
 
 #### Some related links:
