@@ -161,7 +161,7 @@ GJS: No, I have done none of that.
 Audience: You said that you did not trust probability, you did not know how to ...  
 GJS: Yes and no. The answer about probabilities is that I am afraid that once you have probability you will have computations that never converge. If the job is combining probability distributions, densities. If your job is estimating by sampling, which is what Vikash does, and you get some answer, like you get with Monte Carlo methods, but you cannot guarantee it.   
 
-Audience: ?
+Audience: ?  
 GJS: You are asking. what things were you tend to retract, if you find a contradiction? You would put the ordering on what premises you would mark as hypothetical. You could sort on that mark and therefore decide what to retract ... hypotheticaly.   
 
 Audience: Some premises, if you move them, might destroy all of the other things you built, and others cound ... But everything else stays fine ...  
