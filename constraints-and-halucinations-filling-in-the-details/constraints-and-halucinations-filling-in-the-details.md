@@ -164,7 +164,7 @@ GJS: Yes and no. The answer about probabilities is that I am afraid that once yo
 Audience: ?  
 GJS: You are asking. what things were you tend to retract, if you find a contradiction? You would put the ordering on what premises you would mark as hypothetical. You could sort on that mark and therefore decide what to retract ... hypotheticaly.   
 
-Audience: Some premises, if you move them, might destroy all of the other things you built, and others cound ... But everything else stays fine ...  
+Audience: Some premises, if you move them, might destroy all of the other things you built, and others could ... But everything else stays fine ...  
 GJS: Yes, that is why F = ma is pretty valuable. You are asking, can you estimate ahead of time? I do not know. I haven't done any investigation into estimating damage done by retracting a hypothesis.  
 
 59:41
