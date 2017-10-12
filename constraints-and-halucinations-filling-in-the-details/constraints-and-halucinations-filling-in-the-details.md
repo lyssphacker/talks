@@ -147,9 +147,9 @@ The rule the ability to control forward chaining by needed result and control ba
 Audience: Analogous to Prolog in some way, you come to make sure your system ...  
 GJS: No, it might take forever and Prolog often does and the reason is that Prolog is doing pure backward chaining with chronological backtracking (btw. this is doing smart backtracking, dependency-directed backtracking), is the same thing as in the SAT solver you would call that clausal learning, but that is a separate issue ... it is already under the table. The crucial thing going on here is that this is doing mostly foward reasoning, mostly antecedent reasoning, and the reason why it is doing that is because the statement I want to show something, is the statement that I might or might not know, I might now care about, but it is there ...
 
-[So What](slides/so-what.png)
+### [So What](slides/so-what.png)
 
-The idea I have shown you is plumbing, that is all it is. The nice thing about the plumbing is that, unlike logic, does not have ontological assumptions. Writing programs in Prolog is hell, to be perfectly honest. 
+The idea I have shown you is plumbing, that is all it is. The nice thing about the plumbing is that, unlike logic, does not have ontological assumptions. Writing programs in Prolog is hell, to be perfectly honest. To understand what they are doing is hell. There are other things like rule-based things in general or ... you make things that are object-oriented ... now, it is very difficult to write something functionally that way. If you are writing functional program, it is hard to write object-oriented. There are all these barriers for thinking. You are stuck in one or the other kind of thinking.
 
 #### Some related links:
 
