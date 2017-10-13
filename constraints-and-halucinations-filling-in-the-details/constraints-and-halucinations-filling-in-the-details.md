@@ -172,8 +172,30 @@ GJS: There is 2 parts to it. Part of it are dependencies, which are list of depe
 Audience: It makes sense. The thing I am worried about is ... using what did happen to figure out why something did not happen in the absense of more machinery seems to be explosive.  
 GJS: Yes it is, but that is true in any kind of programming. What I am suggesting is, since I have in some sense a mechanical model in my mind (this is a wiring diagram - in fact the program to me is a textual description of an potentially infinite wiring diagram where recursion, etc. makes more parts) ... since it is a wiring diagram then I have techniques of putting in probes and seeing how inputs and outputs relate.  
 
-Audience:
+Audience: Do you have any approaches of dealing with uncertainty?  
+GJS: No. I do not have any magic formula. I think that probability, with high probability, is the best we can do. But, I think that the use of probability is very problematical. That is the difficulty. 
 
+Audience: You have shown 2 examples in this presentation. How big of an example ... 
+GJS: Your definition is like what happens at Google ... There was an example which is way to big to put on slides which is about hypothetical insurance company called ?, and this company is trying to decide whether or not people get insured based on their health habits. There are all sorts of things like, skiing is dangerous, skydiving is dangerous, eating crappy food is dangerous ... There are couple hunderd assertions associated with this, and the properties of the company is that they are very interested in having risk factors that can be accumulated so that if the risk is greater than mumble you get insurance, and if it is less you do, and if it somwhere in between it asks for more information. It is not going to look up on Facebook whether or not it can find pictures of you eating a hamburger unless it has information on other things. That kind of thing works beautifully. It is few hunderd assertions and about 10 pages of code describing Danny and Hal, etc. who all have bad habits. 
+Audience: These assertions are hand-coded?  
+GJS: Yes, I created this database by hand and created the rules. It was sort of a demo that I think is actually ... actually shows ... I was really trying to show how you can really avoid doing work by you not looking at something that is unknown unless you have reasons to investigate it. How do you accumulate reasons to investigate something.  
+
+Audience: Something analogous to the hallucination ... people seem to ... that white including triangle. Can you demonstrate a propagator hallucinate?  
+GJS: I am trying to get a graduate student work on that. I haven't found one who is gutsy enough. The idea is that you have some sort of "retina", and all over the place there are rules, that are little propagators that connect neighboring regions, and regions have multi-scale ?, and these guys talk to each other, etc., and whether or not it works, who knows. It is something like the Waltz's idea but at the scale where you fill your retina with constraints.  
+
+Audience: Is there rule that says if you assume A and you get a contradiction, then accept not A, or reject A?  
+GJS: Yes and no, because there might be many assumptions floating around. It is not just A. What if I assume A and B and C in various places, then I better do some very clever choice about what things to retract to avoid horrible exponential explosion that will occur. I assume that it will be exponential, but I what it to be much smaller.  
+Audience: Maybe what the question is whether you have another network of stuff that will make decisions what you believe.  
+GJS: Yes. 
+Audience: ?  
+GJS: No, you do not have to do something like that. You can do something much more complicated things. That is easy actually.  
+Audience: ... if you accept B and C then you accept A.  
+GJS: Yes, of course. To a great extent that is there anyway because the way clausal learning works which is the same thing as dependency-directed backtracking. You accumulate no-good sets, which are sets of assumptions which can some ? be true, such that one is smaller than the other, it subsumes the other, get rid of it, so that you do not have to look at it again, and that eliminates very large number of possibilitis for everything else. If these guys cannot together be true, then it does not matter what anything else is ... I clipped off whole piece of the search tree.  
+
+Audience: You mentioned that this contains implicit SAT solver. ...
+GJS: This implementation is, like everything I got involved in, is very crude. I am after ideas. I am not going to sit and tweak the code. So, I am not using the best representations of sets. I am using lists that are linear perhaps, maybe not even sorted, which means intersections are square law. This is a demo, cause I am trying to investigate ideas. If I am going to do what you just said, yes, that is a year of work, and I would not learn very much. I might get somebody impressed, but I would not learn very much. And I care about learning. I am sure there is no problem in making very high performance of something like this.  
+
+Audience: 
 
 #### Some related links:
 
