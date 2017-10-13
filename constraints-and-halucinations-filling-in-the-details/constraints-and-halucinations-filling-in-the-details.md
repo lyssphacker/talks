@@ -195,7 +195,7 @@ GJS: Yes, of course. To a great extent that is there anyway because the way clau
 Audience: You mentioned that this contains implicit SAT solver. ...
 GJS: This implementation is, like everything I got involved in, is very crude. I am after ideas. I am not going to sit and tweak the code. So, I am not using the best representations of sets. I am using lists that are linear perhaps, maybe not even sorted, which means intersections are square law. This is a demo, cause I am trying to investigate ideas. If I am going to do what you just said, yes, that is a year of work, and I would not learn very much. I might get somebody impressed, but I would not learn very much. And I care about learning. I am sure there is no problem in making very high performance of something like this.  
 
-Audience: 
+Audience: 1:10:49
 
 #### Some related links:
 
