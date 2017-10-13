@@ -199,4 +199,4 @@ Audience: 1:10:49
 
 #### Some related links:
 
-[Somewhat related slides](http://cap.csail.mit.edu/sites/default/files/Sussman.pdf)
+[Rethinking AI: Constraints and Hallucinations Filling in the Details](http://cap.csail.mit.edu/sites/default/files/Sussman.pdf)
