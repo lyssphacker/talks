@@ -195,7 +195,43 @@ GJS: Yes, of course. To a great extent that is there anyway because the way clau
 Audience: You mentioned that this contains implicit SAT solver. ...
 GJS: This implementation is, like everything I got involved in, is very crude. I am after ideas. I am not going to sit and tweak the code. So, I am not using the best representations of sets. I am using lists that are linear perhaps, maybe not even sorted, which means intersections are square law. This is a demo, cause I am trying to investigate ideas. If I am going to do what you just said, yes, that is a year of work, and I would not learn very much. I might get somebody impressed, but I would not learn very much. And I care about learning. I am sure there is no problem in making very high performance of something like this.  
 
-Audience: 1:10:49
+Audience: Is that going to work if you have any inputs rather than 2?  
+GJS: Sure, that is easy. Thee is lots of stuff like that.  
+
+Audience: You started by talking about psychology and example of asking Arthur his name. Then we stayed in the logical domain and set aside probability, and reason we set aside probability is because of doing any kind of sound probability is hard, but clearly we are taking (with our brain) in lots of noisy data, and in the noise there is contradiction, and we are doing some kind of sound but fast probabalistic reasoninig. We are throwing out outliers in the noise.  
+GJS: I would avoid "probabalistic" ... there is some fast mechanism.  
+Audience: Ok, there is some fast mechanism. We are doing it over noisy data that contains contradiction. We are throwing the outliers and forming pictures despite the outliers we throw out. Why not adopt some crude heuristics and admit some kind of very bad probability, with crude heuristics, so that the overall system can be more psychologically plausible.  
+GJS: That is sometimes the right thing. Jake Beal did something like that. We were worried about how one might read text. However, people make very good things for that. How one would scan some text? You are looking at the sequence of letters, in straight text. You see not just letters, but little chunks. We create propagators whose job was to correlate. ... We wrote a paper on it, and it worked very well. But, that kind of thing can be easily done. The question is whether or not it has anything to do with psychology either. I do not know. I wanna be very careful about this. I do not believe anything that we call neurophysiology or psychology. That is because my friend Lettvin taught me that. One of the most important things he taugt me is this. That is: s = 1/2vt^2, right? That is how we describe it. It does know that. We have to be careful to separate our description of what we see things work from the mechanism. Mechanism of this we really do not know, although Einstein came close to making it clear. Behavior is easily described. Well, we observe smart people. Smart people seem to have some logic in them. Sometimes, they even work probabilistically. That is our description of what they do. I do not know how that works. Just think about how hard it is to understand how brain works. Way back in the 60s there was PDP-6 at MIT that I used a lot. We used to bring radios next to it and listen to ?, and every time Lisp GC will go (weird sound). That was mark-sweep. And things like that. But, basically we had things like that. There was a backplane full of hand-soldered connections. I actually ... So, there was a backplace. You could take your old oscilloscope. You could put probes on that and see spikes and so on. Now think about the following problem. Suppose I have infinite number of these. They are all slightly different. We have no diagrams. Big bus goes from here to here. You can throw darts at it, you can cut the wire, you might blow it away with the gun. OS fails in some interesing way. If you put a probe on it, you cannot put it back to the same place. You tell me that you understand it based on that kind of experiment. My feeling is that neurophysiology is going to give is some information in few hunderd years. The real value of it is medical. They do a lot of study so that they no how to fix people who are broken in some interesting way. But, exactly how machine works is just way beyond the technologies and mechanisms we have at this point. Even if I had a complete circuit diagram, it would not help very much. Look, we have a creature for which we have complete circuit diagram. It is a worm ?. We have every synapse between 100 or so neurons, I think. And no one can telly you, after studying for years, what that neuron does, or how it creates behavior that we see. This is tough.  
+Audience: Just to be clear. ...
+GJS: The reason is because it is inspiring. We can see all sorts of things that we do not know how to do that people can do. And we can get into what kind of mechanism we as engineers can use that might get us that kind of behavior, whether or not that is how people do it.  
+
+Audience: Your propagator diagram is basically a bunch of cells and wires, wiring them together, and you are building circuits this way.  
+GJS: Right, they are little functional devices.  
+Audience: And you have certain number of different kinds of wires.  
+GJS: And you can dynamically build these things.  
+Audience: Have you look at figuring out how to build systems differently ... you have a bunch of values in these cells, bunch of values in these. Tell me how things must be together and how these wires work.  
+GJS: No, I have no idea. Tha is cool. One thing you can try, but this combinatorial disaster. You have all possible connections, This is something like what Waltz did. You have all possible connections, and you modulate the assumption that this one is there. That sounds to be unlikely to ever converge, for any reasonable dataset.  
+Audience: ...  
+GJS: ... the analysis actually ...
+Audience: Somebody figures out the relationship between volts, amps and wats. You can look at a bunch of data ...  
+GJS: There is this character at Cornell who seems to be doing that by induction from numerical exmaples. I do not know how much credence to put into all those that have been published. I do not know how a hard problem can be solved. Remember, go into history of AI, there was this guy Doug Lenat who wrote a program called AM as his Phd thesis. AM was supposed to induce matematical truth from numerical examples. There was a self-limiting process, sort of a wind-up toy. I tried to tell him that at one point, it did not matter. The thing is that, it is easy to make those. It is very hard to tell, until you had run them for a while how much wind-up toy you have.  
+
+Audience: ...  
+GJS: You mean through the propagator network? Certainly it is the case that if these are really running in parallel, which you would hope, in a really nice implementation, and ... Redundant way of solving a problem is very important anyway.  
+Audience: I am thinking about the triangle example. If you follow as certain way, you actually get an answer much faster ...  
+GJS: I do not know how that triangle things works. It involves straight lines. That is very weird because there are no any straight lines in nature really, so this is not something you would expect to be built in. There is the amount of continuity there and I do not know how could this possibly evolve, but people from places where there are no straight lines at all, living in the middle of jungles, also see Kanizsa's triangle, so we know that this is not a cultural thing. 
+Audience: They could see it on the horizon.  
+GJS: If you live in a jungle you are not going to see a horizon anyway.  
+
+Audience: Just to comment on this stuff ... psychologically plausible results ... the correct answer is never very interesing because you get it with some kind of convergent evolution. What is really interesting is to make a system that makes the same kind of mistakes as we do. ... the mistakes I make are uniquely human ...  
+GJS: We can write programs that make mistakes too. Computers can make a billiion mistakes per second. I like to try to capture at least the way I like to thing as programs. It helps me to formalize it, and then I can try to debug myself. I like to write programs whenever I see I am making mistakes.  
+
+Audience: I assume you are aware of Hewitt's "logic" work that he has been doing lately?  
+GJS: I never understood Carl Hewitt, although I tried. I learned great deal from him because he is very, very smart. I have no idea what he is doing right now. I haven't seen him in years.  
+Audience: I thought there might be some overlap ...  
+GJS: There may be. He is impressive.  
+
+Audience: 1:25:06
 
 #### Some related links:
 
