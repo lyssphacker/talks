@@ -3,7 +3,7 @@
 by Gerald Jay Sussman  
 given at Google sometime in 2013  
 
-Abstract:  
+### Abstract
 
 Ever since I was an MIT undergraduate I have been pursuing several overlapping goals:
 
