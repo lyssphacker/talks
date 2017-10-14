@@ -231,7 +231,18 @@ GJS: I never understood Carl Hewitt, although I tried. I learned great deal from
 Audience: I thought there might be some overlap ...  
 GJS: There may be. He is impressive.  
 
-Audience: 1:25:06
+Audience: Indepenently of AI or biological plausibility of how these things work, it is an interesting computational model, and I find myself wandering is it good way of organizing large programs.  
+GJS: As an engineer that is what I am worried about. What I am mostly worried about and I teach a class every spring term is, how does one engineer systems or write programs that have the property that they can be used in ways not anticipated by the designer. How do you actually build flexibility in. I think that is very important. If the pressure is on making correct programs, then flexibility suffers. You have to pay certain amount of correctness for flexibility. I can talk about that some other time.  
+Audience: Have you written anything else on that?  
+GJS: I have written flames. Large, complicated flames with many, many pages.  
+
+Audience: What do you teach in the class?  
+GJS: It is called 6.945 and it will happen this spring.  
+Chris: The old version is the way it was taught here at Google in 2009.  
+GJS: There were major changes since then.  
+
+Audience: You mentioned you have whole lot of stuff you could show us.  
+GJS: The way I put this together is ... last night spent until 3 in the morning pasting together this PDF. 
 
 #### Some related links:
 
