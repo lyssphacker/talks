@@ -75,7 +75,7 @@ I am going to make up some propagator cells. Specifically, I am gong to make up 
 
 I can ask various explanations, like "How do you know this?". Give me level-2 (very simple) explanation. It says a stupid thing, how it got it. 
 
-### [More detail](slides/more-detail.png)
+### [More Detail](slides/more-detail.png)
 
 I can ask for more detailed information. Just to give you an idea. Now I am openning up these propagators. One of the most wonderful things about this kind of system which Stallman and I discovered way back in 1975 was, one of the best ways to use program that helps you to build electrical circuits or gives you partial analysis of the circuit was you can ask it: "How do you know that?". For example, it is possible that if I am designing one, I specify particular resistor ... suppose I have an amplifier and I want certain amount of output swing ... (follows description of an amplifier). Suppose that there is some contradiction in the design of an amplifier. I would get an argument from the computer - "the following constraints are in contradiction, here is the reason why I cannot work". We actually used that for teaching in some of our electric circuit classes. So getting an argument is a good thing. 
 
@@ -83,7 +83,7 @@ I can ask for more detailed information. Just to give you an idea. Now I am open
 
 What we are seeing here is that John Tonry, who is a professor at University of Hawaii, has an estimate for distance ... If I ask what is the distance now, it actually contains 2 pieces of information because the interval produced by VanDenBergh overlaps the interval produced by Tonry. That overlap meant that there is a better estimate. Distance modulus has been also improved because the information that is increased in one of those cells simulated back propagation of information to the other.
 
-### [More sources: Red Shifts](slides/more-sources-red-shifts.png)
+### [More sources: Red shifts](slides/more-sources-red-shifts.png)
 
 We can talk about red shifts ...
 
