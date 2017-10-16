@@ -25,30 +25,30 @@ Here is what I am really worried about. I am worried about acceptable behavior o
 
 Consider this character. This is a relative of mine, and yours. It is a vertebrate, so it has the same body plan as we have, meaning there is nose and a tail, he has spine going down it, same organs that we have. We are pretty much the same creature. In fact, it is not very much different from us. In a simpler case, you take a human genome, change a little bit of it, and you get a rabbit. So, it is very flexible. This is more than the rabbit change, but not much, to make one of these. 
 
-## [Body plans](slides/03-body-plan.png)
+### [Body plans](slides/03-body-plan.png)
 
 We have body plans in engineering. Here is a very famous body plan every electrical engineer knows. This was invented by Edward Robert Armstrong in 1918. It is the standard radio receiver body plan. It is used for audio receivers the way it is written here, because this is a audio frequency amplifier, and that is a loud speaker. That could have been a video amplifier and a display. That could have been FM detector rather than AM detector. That could have been something that did something digital. I am not very worried about the details. The important thing is, that there is a plan. And of course [my friend](slides/02-frog-example.png) over here has the same body plan we have in a very deep way too. He has exactly the same hox gene sequence we have. Does anybody knows what the hox gene is? It is sequence of genes that almost every animal past spunge has. They are actually in a sequence of a chromosome. They represent regions from the nose to the tail. They divide creature into regions. They do not say anything what goes on in those regions. They are the coordinate sequence. 
 
-[Combinators](slides/04-combinators.png)
+### [Combinators](slides/04-combinators.png)
 
 Here is a composition operator. That is a little piece of a body plan. You can have complicated ones like tensors. We understand a little bit, as engineers, what the body plan is. It means that we specify the outline of something without specifiying the inside. That is very important. 
 
-[Worm example](slides/06-worm-example.png)
+### [Worm example](slides/06-worm-example.png)
 
 Here is a guy that is quite different from us. He has the same hox sequence we have. However, his kidney is in his nose. Again, I am trying to explain idea there. That is kind of thing that I want to be able to talk about today and has to do with being able to diddle inside of something that is already laid out. That is a very dangerous kind of manipulation, but is the kind of thing which gives you tremendous kind of flexibility. I am willing to trade off almost everything for flexibility, do I want to be really nasty programmer today. 
 
-[Variations on an Arithmetic Theme](07-variations-on-arithmetic-theme.png)
+### [Variations on an Arithmetic Theme](07-variations-on-arithmetic-theme.png)
 
 This is the idea that Chris Hanson and I have been talking about for very long time. Chris is principal author of MIT Scheme. He now works at Google, although he worked for me for 26 years. We are writing a book on stuff like this, on flexibility. I want you to remember this idea: A diamond is very pretty, but it is very hard to add to a diamond. A ball od mud is not so pretty, but you can always add more mud to a ball of mud. I learned from Joel Moses or Paul Penfield, I do not know which, at APL 79 conference. 
 
-[Simple ODE integrator](slides/08-simple-ode-integrator.png)
+### [Simple ODE integrator](slides/08-simple-ode-integrator.png)
 
 I am going to start with an illustration of a particular numerical process. I do not know how many of you know much about numerical things, but I do a lot of that, because I like to push planets around, in orbits, etc. (celestial mechanics). But, I am going to show you simple one here. This is an ordinary differential equation. All I need to know is time and the position at this time to give how this is accelerating, whatever this object is. It is Newton's laws. All Newton's laws look like that and x can have gazillion dimensions for all I care, usually does. 3 dimensions for every particle or whetever you like. I might want to descritize this so that I can integrate that numerically, and one way to do that is to make discrete approximation of a 2nd derivative which you see there. h is a step size. Stormer's two-step method is a simple version of this. ... The reason I am bringing this up is because I want you to show some interesting things with this. 
 
-[Evolver](slides/09-evolver.png)
+### [Evolver](slides/09-evolver.png)
 
 I can make a thing that evolves this thing. ...
 
-[Harmonic oscillator](slides/10-harmonic-oscillator.png)
+### [Harmonic oscillator](slides/10-harmonic-oscillator.png)
 
 13:44
