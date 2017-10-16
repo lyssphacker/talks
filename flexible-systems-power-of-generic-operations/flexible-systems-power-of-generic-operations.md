@@ -21,6 +21,18 @@ I have been programming computers for ridiculously long time, since 1962, when t
 
 Here is what I am really worried about. I am worried about acceptable behavior over much larger classes of situations then it was anticipated by the designer. That's what I really care about here. I want things with the property that if you got something it works, it does the job you want, and all of a sudden problem changes, I want it to not be too hard to make it work on the next thing. 
 
-## [Frog examaple](02-frog-example.png)
+## [Frog examaple](slides/02-frog-example.png)
 
-Consider this character. This is a relative of mine, and yours. It is a vertebrate, so it has the same body plan as we have. 5:13
+Consider this character. This is a relative of mine, and yours. It is a vertebrate, so it has the same body plan as we have, meaning there is nose and a tail, he has spine going down it, same organs that we have. We are pretty much the same creature. In fact, it is not very much different from us. In a simpler case, you take a human genome, change a little bit of it, and you get a rabbit. So, it is very flexible. This is more than the rabbit change, but not much, to make one of these. 
+
+## [Body plans](slides/03-body-plan.png)
+
+We have body plans in engineering. Here is a very famous body plan every electrical engineer knows. This was invented by Edward Robert Armstrong in 1918. It is the standard radio receiver body plan. It is used for audio receivers the way it is written here, because this is a audio frequency amplifier, and that is a loud speaker. That could have been a video amplifier and a display. That could have been FM detector rather than AM detector. That could have been something that did something digital. I am not very worried about the details. The important thing is, that there is a plan. And of course [my friend](slides/02-frog-example.png) over here has the same body plan we have in a very deep way too. He has exactly the same hox gene sequence we have. Does anybody knows what the hox gene is? It is sequence of genes that almost every animal past spunge has. They are actually in a sequence of a chromosome. They represent regions from the nose to the tail. They divide creature into regions. They do not say anything what goes on in those regions. They are the coordinate sequence. 
+
+[Combinators](slides/04-combinators.png)
+
+Here is a composition operator. That is a little piece of a body plan. You can have complicated ones like tensors. We understand a little bit, as engineers, what the body plan is. It means that we specify the outline of something without specifiying the inside. That is very important. 
+
+[Worm example](slides/06-worm-example.png)
+
+Here is a guy that is quite different from us. He has the same hox sequence we have. However, his kidney is in his nose. Again, I am trying to explain idea there. That is kind of thing that I want to be able to talk about today and has to do with being able to diddle inside of something that is already laid out. That is a very dangerous kind of manipulation, but is the kind of thing which gives you tremendous kind of flexibility. I am willing to trade off almost everything for flexibility, do I want to be really nasty programmer today. 8:43
