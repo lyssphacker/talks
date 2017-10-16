@@ -43,4 +43,12 @@ This is the idea that Chris Hanson and I have been talking about for very long t
 
 [Simple ODE integrator](slides/08-simple-ode-integrator.png)
 
-I am going to start with an illustration of a particular numerical process. I do not know how many of you know much about numerical things, but I do a lot of that, because I like to push planets around, in orbits, etc. (celestial mechanics). But, I am going to show you simple one here. This is an ordinary differential equation. All I need to know is time and the position at this time to give how this is accelerating, whatever this object is. It is Newton's laws. All Newton's laws look like that and x can have gazillion dimensions for all I care, usually does. 3 dimensions for every particle or whetever you like. I might want to descritize this so that I can integrate that numerically, and one way to do that is to make discrete approximation of a 2nd derivative which you see there. h is a step size. Stormer's two-step method is a simple version of this. ... The reason I am bringing this up is because I want you to show some interesting things with this. 12:22
+I am going to start with an illustration of a particular numerical process. I do not know how many of you know much about numerical things, but I do a lot of that, because I like to push planets around, in orbits, etc. (celestial mechanics). But, I am going to show you simple one here. This is an ordinary differential equation. All I need to know is time and the position at this time to give how this is accelerating, whatever this object is. It is Newton's laws. All Newton's laws look like that and x can have gazillion dimensions for all I care, usually does. 3 dimensions for every particle or whetever you like. I might want to descritize this so that I can integrate that numerically, and one way to do that is to make discrete approximation of a 2nd derivative which you see there. h is a step size. Stormer's two-step method is a simple version of this. ... The reason I am bringing this up is because I want you to show some interesting things with this. 
+
+[Evolver](slides/09-evolver.png)
+
+I can make a thing that evolves this thing. ...
+
+[Harmonic oscillator](slides/10-harmonic-oscillator.png)
+
+13:44
