@@ -19,7 +19,7 @@ I have been programming computers for ridiculously long time, since 1962, when t
 
 ### [Robustness](slides/01-robust-systems.png)
 
-Here is what I am really worried about. I am worried about acceptable behavior over much larger classes of situations then it was anticipated by the designer. That's what I really care about here. I want things with the property that if you got something it works, it does the job you want, and all of a sudden problem changes, I want it to not be too hard to make it work on the next thing. 
+Here is what I am really worried about. I am worried about acceptable behavior over much larger classes of situations then it was anticipated by the designer. That's what I really care about here. I want things with the property that if you got something that works, it does the job you want, and all of a sudden problem changes, I want it to not be too hard to make it work on the next thing. 
 
 ## [Frog examaple](slides/02-frog-example.png)
 
