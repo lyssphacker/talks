@@ -67,4 +67,14 @@ And then I can write down my numeric arithmetic. It is arithmetic starting with 
 
 ### [Symbolic arithmetic](slides/14-symbolic-arithmetic.png)
 
-22:51
+I can make symbolic arithmetic parametric over base arithmetic. What you see here is that symbolic arithmetic ... I am calling it symbolic over base arithmetic ... right now my head is numeric arithmetic, but it might be something else. It might be matrix arithmetic, for all I know. For every name pick up the base operation ... 
+
+### [Some combinators](slides/15-add-2-arithmetic.png)
+
+Now I can make some combinators, like we had compose originally. Compose was a very simple one. Here is the one that adds two arithmetics together. I start with 2 arithmetics, a1 and a2 ... 
+
+### [A bit more setup](slides/16-a-bit-more-setup.png)
+
+So far, I am building little more structure here, and now I can build a little bit more setup ... Now you will see what is going to happen. This btw something I teach classes in. Every spring term I teach a class on games like this, and the reason I do that is because I am in opposition to the standard belief structure of computer scientists, who think you should not do things like this. And the reason why I am worried about that is because I think they are worried about the wrong things, most of the time. What I want to make sure is, that it is not the case that I am going to spend the rest of my life ... everybody who is a programmer spends most of his life fixing code that is already built, that somebody else had built, which in fact it should not be a problem. It should be easy to do that. The hard stuff should be coming up with the ideas and organizations that do not have this problem. Inspiration for that is Emacs. Emacs is a gorgeous program explicitly because of the fact that 10000 people had written parts of it, and it still works, it is reliable.  
+
+Audience: 27:19
