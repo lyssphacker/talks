@@ -77,4 +77,11 @@ Now I can make some combinators, like we had compose originally. Compose was a v
 
 So far, I am building little more structure here, and now I can build a little bit more setup ... Now you will see what is going to happen. This btw something I teach classes in. Every spring term I teach a class on games like this, and the reason I do that is because I am in opposition to the standard belief structure of computer scientists, who think you should not do things like this. And the reason why I am worried about that is because I think they are worried about the wrong things, most of the time. What I want to make sure is, that it is not the case that I am going to spend the rest of my life ... everybody who is a programmer spends most of his life fixing code that is already built, that somebody else had built, which in fact it should not be a problem. It should be easy to do that. The hard stuff should be coming up with the ideas and organizations that do not have this problem. Inspiration for that is Emacs. Emacs is a gorgeous program explicitly because of the fact that 10000 people had written parts of it, and it still works, it is reliable.  
 
-Audience: 27:19
+Audience: This sound marvelous.  
+GJS: I am not done. You will get more marvelous.  
+Audience: In a situation in which you will write big flight-control system or avionics package.  
+GJS: Lets get back to avoionics, because that is safety-critical, even more interesting.  
+Audience: Or some medical software. In the real world Raytheons, Lockhee Martins, etc. will look at you and go, there is no way I am going to put Lisp on an aircraft.  
+GJS: That is exactly right.  
+Audience: But they will inherit methodology that give them mobility, robustness, etc., but field programmers will stick to their C or assembly, and they are going to take their decades old methodology to develop these things ... we really do not want to kill all those people on the plane.  
+GJS: I agree. I will point out something very different though. I think that people who think that the avionics software, for example autopilot should be perfect are wrong. I will explain what I mean by that. That does not mean I can convince them, that is a different thing, because they also have liability problems. 28:38
