@@ -90,3 +90,56 @@ GJS: I did not look into that, but I will tell you that recently I have been loo
 
 ### [Let's go](slides/17-lets-go.png)
 I am deliberately taking risks here, extreme ones. Code I am writing here is terribly risky, on purpose. I am showing you extreme end of it. Of course I would like to put there lots of tests, checks, etc., that things are sensible. That is a different problem. I want to show you what I can do so far. This is the beginning of course. I can still do what I did before. This is the original numerical history that I started with, first few values of sin. It also works symbolically, and it works in combination, meaning I can have part of the thing being numerical, and part being symbolic, and I can get the result with symbolic part being left unevaluated. Everything seems to be in a nicer state. In many ways this is the way I like to build software myself. I like to build it so that I can layer it on like this, and when I get a new problem, I am just going to add more stuff. I want to be additive. I do not want to screwing around with I already got. In the case of numerical stuff which is easy ... algebraic or numerical stuff ... it is true this is very structured, and that makes it a lot easier than something more complicated. I want to make sure that you understand that I understand that that is true. This is very simplified situation. Hardly anything is well understood as algebra. 
+
+### [Arithmetic on functions](slides/18-arithmetic-on-functions-1.png)
+
+Mathematicians like to invent funny notation. f(g(x)) = (f + g)(x). It just happens to be convention. We also get into some trouble with mathematical notation. You know that cos2(x) = cos(x) * cos(x), but cos-1(x) is not 1/cos(x). These people are not even consistent. We have to put up with the fact that traditional mathematics is a natural language. Suppose I want to put in functions. I make a function arithmetic over some arbitrary range arithmetic cause I am dealing with the values of functions that ought to be added together or multiplies or whatever. ... 
+
+### [But (f + 1)(x) = f(x) + 1](slides/19-arithmetic-on-functions-2.png)
+
+Here is a thing that mathematicians do, they have coersions. In this context 1 is interpreted as a constant function which always produces 1 no matter what it's arguments are. I can do that pretty easily by changing function arithmetic slightly. ... 
+
+### [So](slides/20-arithmetic-on-functions-3.png)
+
+If I install that arithmetic, then I can say things like this. I have very large system built on this stuff that I use for teaching advanced classical mechanics in fall term of every year with my friend Jack Wisdom. It is very simple and students get to use it. ...
+
+### [Have we found heaven?](slides/21-have-we-found-heaven.png)
+
+I can have algebraic simplifier which is itself a complicated problem, probably far more complicated ... I am not going to tell you to write one of those. Sometimes algebraic simplifier is a complicater. What you mean by simple depens on what are you going to use result for. But imagine that I have something call simplifier ... then I get this fairly horrible object. If I were debugging a numerical program it is very important for me to do this, to be able to symbolically evaluate it and examine it. Indeed, a lot of good compiler technology is in fact simplifying symbolic evaluation of a program. I do not thing we should consider a compiler other than fairly complicated simplifier of such a thing with maybe a translation phase to some other language, and maybe simplification of that language too. 
+
+### [Another frog example](slides/22-frog-example.png)
+
+Now I am going to get back to this biological metaphor. What I have shown you so far looks pretty daring but it is not. It was very simple. And it was simple in a way that was constraining me a lot. I did know what are all the algebraic operators going to be ahead of time. I had to have that library into a package. That is already too much for my point of view. I want to loosen this up. I am inspired by this character. This is a particular frog, quite different from the one you saw before, but it looks the same. Frogs all look the same. It has been known since 1913 or something ... the big deal is that different embrionic tissues combine to make organs in this frog than in the standard frog. So, there is more than one way to make a frog.  
+
+Audience: This is argument for intelligent design.  
+GJS: I am not going to fight with you over that one. I think this is the ability to tweak things under the table. Evolution has had nice feature that makes it more powerful then what we do, and it is that you do not have to figure out ahead of time. You build this thing called frog and you can tweak it by changing the order in which things happen in the development for example. That is pretty wild. So, you make the same frog, but different way. I want to be more like that. I want to have that kind of freedom.  
+
+### [My mantra for today](slides/23-diamond-ball-of-mud.png)
+
+### [Arithmetic is not everything - sequences](slides/24-arithmetic-is-not-everything-1.png)
+
+Here is my ball of mud. First, lets say why I am worried about this. Not everything is arithmetic. Arithmetic is very, very simple. But I can start to deal with things like sequences which is much more complicated, because I have infinite sequence ... I see some Clojure over there ... infinite sequence are strong component of the Clojure world, and they should be. They should be the same as lists. That is the mistake I made long ago in Scheme before I understood that, that stream and a list should be the same, and they should have the same operators that apply to them. And I have vectors, which have different properties of course. Vectors are O(1) access. There are character string, there are various procedures appropriate for those. Diversity there is much more complicated than you find in algebra. 
+
+### [Arithmetic is not everything - sets and multisets](slides/22-arithmetic-is-not-everything-2.png)
+
+But it is worse than that. We have things like sets. And that can drive you nuts too. You have things as distinct as linear lists and hash tables. They have to be merged together to have one idea how to deal with sets. So when you start dealing with really complicated systems, the more like we deal in computation, you really do not want to be constrained by the feeling you are going to know all of the operators you are going to deal with ahead of time. The package I am interested in is the package of everything. I want everything to be generic and modifiable. 
+
+### [Extensible generics - my ball of mud](slides/26-extensible-generics.png)
+
+So, as a consequence, here is my ball of mud. I want to be able to say things like this. I am going to make a generic operation and give it name "foo" for purposes of debugging. It is generic operation of arity 2. If all 2 arguments are numbers then I am going to add them. If any of them is symbolic, I want to cons a plus onto the arguments. That is a much more flexible way cause I am not assuming ahead of time what all the parts are. 
+
+### [How to play](slides/27-how-to-play.png)
+
+Now I am going to tell you how I make this. ... There is some details on how to make this very efficient. It has to be efficient. That takes clever Chris Hanson type work. Basically, how to get a compiler turn this into 10 instructions. But that is separate issue. 
+
+### [Back to arithmetic](slides/28-back-to-arithmetic-1.png)
+
+Now I go back to arithmetic. ... This is very flexible, yet there are lot of constraints here.
+
+### [Back to arithmetic - examples](slides/29-back-to-arithmetic-2.png)
+
+I am going to give you some examples. ... I have done something nasty. I have introduced some order dependencies, that are worst than the ones I had before. It depends on the order which I build things. That is the cost of being flexible this way. An alternate way to thing, which I did not implement, which will be fun to do, and which I will next time I have all nighter to pull off, which I like to spend whole night programming. What I am going to do then is to make machine try all possible orders and see if there is any that converge (that is the right one) unless there are 2 that converge in which case they have to be equal. That is the way real things ought to work. It is the same way biological systems work, sort of. There is degeneracy in biological systems, meaning ... in physics we talk about degenerate eigenvalues, in quantum mechanics there are many ways to get that eigenvalue. From biological point of view, if I fail to eat sugar anymore, for example I lose the ability to process glucose, I can still get energy by eating proteins. It turns out there are different pathways ... I might not be able to survive for long that way, but certainly there are many things like that. E.g. if I hurt my right arm, I can do use my left arm, including write badly. Degneracy means there are many ways to do it. It is not the same as redundancy. Our kidney is redundant. It has gazillion copies of the same machine. If you have many machines each of which does approximately the same thing, that is called degeneracy. That is a very powerful thing to build into programs. We do not do that very often. Graceful degradation by having more than one way of solving the same problem, so that if any of the ways fails, there are maybe other ways to do it.  
+
+### [Closure](slides/30-closure.png)
+
+50:34
