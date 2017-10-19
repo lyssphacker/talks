@@ -142,4 +142,26 @@ I am going to give you some examples. ... I have done something nasty. I have in
 
 ### [Closure](slides/30-closure.png)
 
-50:34
+... I can use generic arithmetic and build things over that. ... That is the best situation when things work when you do not expect them to. 
+
+### [Order dependency - Sigh!](slides/31-order-dependency.png)
+
+### [Unambiguous rules](slides/32-unambiguous-rules.png)
+
+Now I have something that works for every case I have shown you before and is much cleaner and easier to work with because I can add things without knowing about them ahead of time. 
+
+### [A Literal Force Law](slides/33-literal-force-law.png)
+
+Now, going back to where we started, we are going to look at some literal force law. 
+
+### [Two steps with symbolic simplification](slides/34-two-steps-withs-symbolic-simplification.png)
+
+I am beginning to see things that I want to fix. As a good programmer I do not like this because I am evaluating this guy several times, and that is the most expensive process in doing integration. So what I want to do here is common subexpression elimination. 
+
+### [Removing common subexpressions](slides/35-removing-common-subexpressions.png)
+
+That looks pretty good. I am about to converge and summarize. What I have been showing you are some very dangerous games I play. I believe that careful but dangerous programming is actually a very good strategy, and the reason why it is good is because it allows you to try things very fast and get them to work. Many of the mutations in biological systems are fatal. But what you end up with is very robust mechanism when it works. There are lots of cases where that can be improved. I am not trying to say that this is the right way to do everything. As I said at the very beginning, if I have garbage collector, yes, that is the case where I am going to prove it correct. I have to make the effort to make sure that garbage collector is not going to screw things up because that is very hard to debug. That is the reason. It is not because I care it is right, I care that it is very hard to debug. It is very hard to debug a program when garbage collector fails. I want to make sure that things are debuggable. Easily modifiable and debuggable, very fast, with very little effort. 
+
+### [Programming Organizational Theories](slides/36-programming-organizational-theories.png)
+
+There are all these things that people believe are the right thing to do things is. 54:30
