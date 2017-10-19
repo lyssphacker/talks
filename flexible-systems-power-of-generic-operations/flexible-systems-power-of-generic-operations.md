@@ -164,4 +164,4 @@ That looks pretty good. I am about to converge and summarize. What I have been s
 
 ### [Programming Organizational Theories](slides/36-programming-organizational-theories.png)
 
-There are all these things that people believe are the right thing to do things is. 54:30
+There are all these things that people believe are the right thing to do things is. I have lots of friends who will tell me you whip the programmer until he does it right. This is the Dijkstra theory. Then there are people who say that object-oriented programming is clearly right way to do everything, or functional programming - maybe, I like it, I enjoy programming that way. 54:52
