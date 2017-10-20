@@ -193,4 +193,4 @@ Audience: Has anyone done some formal or informal work on developing a metric wh
 GJS: I do no know. However, there is a good piece of work for you to do. I think it would be nice to figure this out.  
 
 Audience: Can you expend more on the propagator model?  
-1:15:50
+In propagator idea the world is made out of little autonomous machines. A machine might be a computer or maybe an electrical circuit, I do not care. A computer is an electrical circuit that happens to be universal in it's ability to be programmed. It could be something like x86 with a GB of RAM. They talk throught things called cells. 1:16:31
