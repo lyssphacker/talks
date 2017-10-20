@@ -93,7 +93,7 @@ I am deliberately taking risks here, extreme ones. Code I am writing here is ter
 
 ### [Arithmetic on functions](slides/18-arithmetic-on-functions-1.png)
 
-Mathematicians like to invent funny notation. f(g(x)) = (f + g)(x). It just happens to be convention. We also get into some trouble with mathematical notation. You know that cos2(x) = cos(x) * cos(x), but cos-1(x) is not 1/cos(x). These people are not even consistent. We have to put up with the fact that traditional mathematics is a natural language. Suppose I want to put in functions. I make a function arithmetic over some arbitrary range arithmetic cause I am dealing with the values of functions that ought to be added together or multiplies or whatever. ... 
+Mathematicians like to invent funny notation. f(g(x)) = (f + g)(x). It just happens to be a convention. We also get into some trouble with mathematical notation. You know that cos<sup>2</sup>(x) = cos(x) * cos(x), but cos-1(x) is not 1/cos(x). These people are not even consistent. We have to put up with the fact that traditional mathematics is a natural language. Suppose I want to put in functions. I make a function arithmetic over some arbitrary range arithmetic cause I am dealing with the values of functions that ought to be added together or multiplies or whatever. ... 
 
 ### [But (f + 1)(x) = f(x) + 1](slides/19-arithmetic-on-functions-2.png)
 
