@@ -154,7 +154,7 @@ Now I have something that works for every case I have shown you before and is mu
 
 Now, going back to where we started, we are going to look at some literal force law. 
 
-### [Two steps with symbolic simplification](slides/34-two-steps-withs-symbolic-simplification.png)
+### [Two steps with symbolic simplification](slides/34-two-steps-with-symbolic-simplification.png)
 
 I am beginning to see things that I want to fix. As a good programmer I do not like this because I am evaluating this guy several times, and that is the most expensive process in doing integration. So what I want to do here is common subexpression elimination. 
 
