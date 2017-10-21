@@ -120,7 +120,7 @@ GJS: I am not going to fight with you over that one. I think this is the ability
 
 Here is my ball of mud. First, lets say why I am worried about this. Not everything is arithmetic. Arithmetic is very, very simple. But I can start to deal with things like sequences which is much more complicated, because I have infinite sequences ... I see some Clojure over there ... infinite sequences are strong component of the Clojure world, and they should be. They should be the same as lists. That is the mistake I made long ago in Scheme before I understood that, that stream and a list should be the same, and they should have the same operators that apply to them. And I have vectors, which have different properties of course. Vectors are O(1) access. There are character string, there are various procedures appropriate for those. Diversity there is much more complicated than you find in algebra. 
 
-### [Arithmetic is not everything - sets and multisets](slides/22-arithmetic-is-not-everything-2.png)
+### [Arithmetic is not everything - sets and multisets](slides/25-arithmetic-is-not-everything-2.png)
 
 But it is worse than that. We have things like sets. And that can drive you nuts too. You have things as distinct as linear lists and hash tables. They have to be merged together to have one idea how to deal with sets. So when you start dealing with really complicated systems, the more like we deal in computation, you really do not want to be constrained by the feeling you are going to know all of the operators you are going to deal with ahead of time. The package I am interested in is the package of everything. I want everything to be generic and modifiable. 
 
