@@ -1,0 +1,8 @@
+Creating a little language to solve a specific problem is the most effective technique
+yet devised for reducing complexity in software. ... For this reason, little languages work best in concert. The ideal technique for writing
+a complex program is to slice it into multiple problem-specific pieces and then define
+a language for each problem slice. If we slice the program vertically, the result is a
+“tower” of languages, layered atop one another. Regardless of how we slice the overall
+problem, we can use the right language, and the right paradigm, for each subproblem.
+
+-- WILLIAM E. BYRD AND DANIEL P. FRIEDMAN (Authors of The Reasoned Schemer) in foreword to the book "The Joy of Clojure"
