@@ -9,7 +9,7 @@ All slides can be found [here](slides/slides.pdf).
 
 ### [Opening remark](slides/page_1.pdf)
 
-We are in a real trouble and have not the foggiest idea how to compute very well. There might some glimmer of hope on the horizon, in number of different directions, some of which I might point out.  
+We are in a real trouble and have not the foggiest idea how to compute very well. There might be some glimmer of hope on the horizon, in number of different directions, some of which I might point out.  
 
 ### Most things are obsolete
 
