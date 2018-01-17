@@ -37,8 +37,6 @@ One thing I am going to start with is very old stuff. When I was an undergraduat
 
 ### [Cognition involves filling in details](slides/cognition-involves-filling-in-details.png)
 
-![Cognition involves filling in details](slides/cognition-involves-filling-in-details.png)
-
 One of the observations is that in order to see or perceive things you better fill in details, there are details that come from everywhere, that in fact is essential to halucinate details if they are not there and it happens very fast. Look at this [picture](slides/cognition-involves-filling-in-details.png). Everybody sees these 2 scenes. What is this? - a car. What is this? These are the same bit patterns, just flipped. You created the scene that was not there. These are the actual bits. There is a wheel, it is all there. The same bits. 
 
 ### [Kanizsa's Triangle Illusion](slides/kanizsa-triangle.png)
