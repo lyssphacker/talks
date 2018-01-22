@@ -5,17 +5,7 @@ Note: This talk presents how Smalltalk group at PARC was thinking about OOP back
 I wrote my first program that I would call object-oriented in 1962 and people have been writing programs in that style even earlier than that. In my particular case I was a programmer in the Air Force at Air Training Command in 1962 there were no standardized operating systems of (course that's true today). But back then there was actually a reason for it nobody had gotten around to the idea of thinking it might be useful, and Air Training Command had a problem of moving tapes with records of various kinds on them from one Air Training Command base to another. The machines back then Burroughs 220, which were machines that have had about five thousand characters of storage and were about the size of this room and were great coffee warmers. My image of them is with this huge set of boxes with a row of pots on top trapping the heat as a came out.  Now the problem that they had was that there is no way to standardize on what the formats of the different records were. They changed and the operating system. It was usually just the kind of a loading program and so there was no way of standardizing on that and they wondered how can we actually read these data records if everything is constantly changing and nothing holds still. Somebody thought up a great idea. That idea was to have the records shipped in the following format. Each tape file had three sections to it: the front section was fairly short, it had a bunch of relative pointers into the second section which contained bunch of Burroughs 220 code and that code knew how to deal with a third section which had the actual data records. There are usually about 20 or 30 what we would call messages today. 20 or 30 entries in the first part and the code that came along with the tape records knew how to deal with all the data. **So in current day terms what the Air Training Command was doing (I think it was as far as the late 50s) was to ship an entire class of objects. The class was shipped with the protocol, with all of the code, and with all of the data in a form in which you did not have to penetrate any of it in order to make use of it.** That was used for a number of years as a technique until COBOL came in and the Air Force forced all of those good ideas to go away in order to standardize and COBOL which is a much weaker conception going back to the notion of data structures that are fragile.
 
 ### Encapsulation
-our bodies have approximately a
-9:27trillion cells in them and each cell is
-9:31rather complex each cell has many
-9:34millions of components in its own right
-9:37so one of the ways nature discovered to
-9:43control complexity and the kinds of
-9:46interactions that are likely to happen
-9:48is to try and incapsulate them in
-9:52various ways this is a familiar
-9:53principle to us it's something that we
-9:55use in regular program
+Our bodies have approximately a trillion cells in them and each cell is rather complex each cell has many millions of components in its own right so one of the ways nature discovered to control complexity and the kinds of interactions that are likely to happen is to try and encapsulate them in various ways. This is a familiar principle to us. It's something that we use in regular program
 9:56as well trying to encapsulate and the
 10:00question you're always asking when you
 10:03encapsulate we're going to ask this
@@ -68,7 +58,10 @@ our bodies have approximately a
 12:25okay now we don't generally do that when
 12:29we write an object-oriented program but
 12:31in fact people are starting to do that
-12:33now in artificial intelligence and
+12:33now in artificial intelligence 
+
+
+and
 12:36people who are interested can can bring
 12:38this up later so my particular
 12:52my particular motivation
