@@ -4,37 +4,8 @@ Note: This talk presents how Smalltalk group at PARC was thinking about OOP back
 ### First known form of OOP
 I wrote my first program that I would call object-oriented in 1962 and people have been writing programs in that style even earlier than that. In my particular case I was a programmer in the Air Force at Air Training Command in 1962 there were no standardized operating systems of (course that's true today). But back then there was actually a reason for it nobody had gotten around to the idea of thinking it might be useful, and Air Training Command had a problem of moving tapes with records of various kinds on them from one Air Training Command base to another. The machines back then Burroughs 220, which were machines that have had about five thousand characters of storage and were about the size of this room and were great coffee warmers. My image of them is with this huge set of boxes with a row of pots on top trapping the heat as a came out.  Now the problem that they had was that there is no way to standardize on what the formats of the different records were. They changed and the operating system. It was usually just the kind of a loading program and so there was no way of standardizing on that and they wondered how can we actually read these data records if everything is constantly changing and nothing holds still. Somebody thought up a great idea. That idea was to have the records shipped in the following format. Each tape file had three sections to it: the front section was fairly short, it had a bunch of relative pointers into the second section which contained bunch of Burroughs 220 code and that code knew how to deal with a third section which had the actual data records. There are usually about 20 or 30 what we would call messages today. 20 or 30 entries in the first part and the code that came along with the tape records knew how to deal with all the data. **So in current day terms what the Air Training Command was doing (I think it was as far as the late 50s) was to ship an entire class of objects. The class was shipped with the protocol, with all of the code, and with all of the data in a form in which you did not have to penetrate any of it in order to make use of it.** That was used for a number of years as a technique until COBOL came in and the Air Force forced all of those good ideas to go away in order to standardize and COBOL which is a much weaker conception going back to the notion of data structures that are fragile.
 
-what I thought I'd do is
-7:55for those people who are not acquainted
-7:58with it at all I thought I would just
-8:00say a couple of couple of words about
-8:04what it what I mean when I say
-8:07object-oriented programming and I have a
-8:11I have a very simple diagram here for me
-8:16the whole notion of objects was
-8:20triggered off by seeing a number of
-8:22different systems some of them in
-8:26computer science but the first ones that
-8:28I looked at were actually biological I
-8:30have a degree in molecular biology and
-8:35one of the things that struck me when I
-8:37was studying molecular biology many
-8:38years ago was that compared to the kinds
-8:43of structures that we tend to build here
-8:45on earth the average biological
-8:48structure is more than a thousand times
-8:51as complex both as regard to the number
-8:54of different parts it has and to the
-8:59complexity that has to be controlled for
-9:03instance a grand piano is a rather
-9:06complex machine has about 20,000 parts
-9:09which surprises most musicians you don't
-9:11even think that they're actually playing
-9:13on a machine they think of it as an
-9:16instrument and the instrument by
-9:18definition can't be a machine but in
-9:19fact it is a machine has about 20,000
-9:22parts our bodies have approximately a
+### Encapsulation
+our bodies have approximately a
 9:27trillion cells in them and each cell is
 9:31rather complex each cell has many
 9:34millions of components in its own right
