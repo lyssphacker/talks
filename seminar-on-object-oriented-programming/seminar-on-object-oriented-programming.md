@@ -4,73 +4,7 @@ Note: This talk presents how Smalltalk group at PARC was thinking about OOP back
 ### First known form of OOP
 I wrote my first program that I would call object-oriented in 1962 and people have been writing programs in that style even earlier than that. In my particular case I was a programmer in the Air Force at Air Training Command in 1962 there were no standardized operating systems of (course that's true today). But back then there was actually a reason for it nobody had gotten around to the idea of thinking it might be useful, and Air Training Command had a problem of moving tapes with records of various kinds on them from one Air Training Command base to another. The machines back then Burroughs 220, which were machines that have had about five thousand characters of storage and were about the size of this room and were great coffee warmers. My image of them is with this huge set of boxes with a row of pots on top trapping the heat as a came out.  Now the problem that they had was that there is no way to standardize on what the formats of the different records were. They changed and the operating system. It was usually just the kind of a loading program and so there was no way of standardizing on that and they wondered how can we actually read these data records if everything is constantly changing and nothing holds still. Somebody thought up a great idea. That idea was to have the records shipped in the following format. Each tape file had three sections to it: the front section was fairly short, it had a bunch of relative pointers into the second section which contained bunch of Burroughs 220 code and that code knew how to deal with a third section which had the actual data records. There are usually about 20 or 30 what we would call messages today. 20 or 30 entries in the first part and the code that came along with the tape records knew how to deal with all the data. **So in current day terms what the Air Training Command was doing (I think it was as far as the late 50s) was to ship an entire class of objects. The class was shipped with the protocol, with all of the code, and with all of the data in a form in which you did not have to penetrate any of it in order to make use of it.** That was used for a number of years as a technique until COBOL came in and the Air Force forced all of those good ideas to go away in order to standardize and COBOL which is a much weaker conception going back to the notion of data structures that are fragile.
 
-4:41some of the people in the room are
-4:43rather knowledgeable about
-4:44object-oriented programming some of the
-4:47people in the audience are here out of
-4:50curiosity so I made a kind of a mixed
-4:55talk what I would like to do is to give
-4:59you sort of a perspective on where
-5:02object-oriented programming has been
-5:04what it's what it's been done without
-5:06without getting to historical about it
-5:08but try and give you an understanding of
-5:11why it has contributed so much in a
-5:14number of areas other than just writing
-5:17programs that don't break one of those
-5:21is user interface which is a very
-5:23important area and there are some direct
-5:26relations chips to the way we think
-5:29about objects and the way we think about
-5:31user interface and then take you into
-5:36the future a little bit and show you
-5:37some of the things in which
-5:38object-oriented programming is being
-5:40used for in research directions and then
-5:43try and open up the form into issues
-5:47because my belief is that the basic
-5:50ideas of object-oriented
-5:51are quite simple maybe too simple to be
-5:56popular until we absolutely require
-6:00simplicity in this stage of 2 million
-6:01line programs but that the most
-6:05interesting thing about object-oriented
-6:07programming are the are the various
-6:09issues and the styles for using it and
-6:11those haven't settled yet so my
-6:15reference to the IBM joke I think a good
-6:17good way of starting out the talk is
-6:19that last year it was even reported in
-6:23Business Week as a significant event IBM
-6:26had its first object-oriented colloquium
-6:31it was such an amazing thing they
-6:33believe that only 25 people would attend
-6:37and in fact 500 attended and they had to
-6:40turn away 500 people from within IBM I
-6:45got invited to give the keynote talk
-6:47part of what I'm going to show you today
-6:48is from that keynote talk and standing
-6:52there in Yorktown Heights giving the
-6:56giving the talk I was reminded of
-6:58William James's characterization of the
-7:01three stages that an idea goes through
-7:03the first stage is the new idea is
-7:07characterized as the work of mad been
-7:11absolutely denounced out of hand a few
-7:14years later goes through a different
-7:17stage when it's remarked on as being
-7:19commonplace and obvious all the time
-7:21then the third and final stage is when
-7:24the original denouncer is claimed to
-7:25have invented it and we are now in that
-7:30third stage for object-oriented
-7:32programming because now that iBM has
-7:33decided to adopt I've yet
-7:36I'm Jacobian program we can be quite
-7:38sure that it's actually obsolete
-7:40and on its way out
-7:45so now before before I get into the
-7:51historical part what I thought I'd do is
+what I thought I'd do is
 7:55for those people who are not acquainted
 7:58with it at all I thought I would just
 8:00say a couple of couple of words about
