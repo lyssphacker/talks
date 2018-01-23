@@ -5,60 +5,8 @@ Note: This talk presents how Smalltalk group at PARC was thinking about OOP back
 I wrote my first program that I would call object-oriented in 1962 and people have been writing programs in that style even earlier than that. In my particular case I was a programmer in the Air Force at Air Training Command in 1962 there were no standardized operating systems of (course that's true today). But back then there was actually a reason for it nobody had gotten around to the idea of thinking it might be useful, and Air Training Command had a problem of moving tapes with records of various kinds on them from one Air Training Command base to another. The machines back then Burroughs 220, which were machines that have had about five thousand characters of storage and were about the size of this room and were great coffee warmers. My image of them is with this huge set of boxes with a row of pots on top trapping the heat as a came out.  Now the problem that they had was that there is no way to standardize on what the formats of the different records were. They changed and the operating system. It was usually just the kind of a loading program and so there was no way of standardizing on that and they wondered how can we actually read these data records if everything is constantly changing and nothing holds still. Somebody thought up a great idea. That idea was to have the records shipped in the following format. Each tape file had three sections to it: the front section was fairly short, it had a bunch of relative pointers into the second section which contained bunch of Burroughs 220 code and that code knew how to deal with a third section which had the actual data records. There are usually about 20 or 30 what we would call messages today. 20 or 30 entries in the first part and the code that came along with the tape records knew how to deal with all the data. **So in current day terms what the Air Training Command was doing (I think it was as far as the late 50s) was to ship an entire class of objects. The class was shipped with the protocol, with all of the code, and with all of the data in a form in which you did not have to penetrate any of it in order to make use of it.** That was used for a number of years as a technique until COBOL came in and the Air Force forced all of those good ideas to go away in order to standardize and COBOL which is a much weaker conception going back to the notion of data structures that are fragile.
 
 ### Encapsulation
-Our bodies have approximately a trillion cells in them and each cell is rather complex each cell has many millions of components in its own right so one of the ways nature discovered to control complexity and the kinds of interactions that are likely to happen is to try and encapsulate them in various ways. This is a familiar principle to us. It's something that we use in regular program
-9:56as well trying to encapsulate and the
-10:00question you're always asking when you
-10:03encapsulate we're going to ask this
-10:04quite a bit later is just what is
-10:07encapsulated what kinds of things are we
-10:10trying to control are usually in regular
-10:13programming what we encapsulate are
-10:15sections of programs that occasionally
-10:19will try and encapsulate with regard to
-10:21a protocol for dealing with some system
-10:23we don't want to inquire about the
-10:25internals of what biological systems
-10:28encapsulate is the actual environment in
-10:32which most important processing takes
-10:35place there are very few object-oriented
-10:38programming languages that go that far
-10:40the average object-oriented programming
-10:43language encapsulate snot the
-10:45environment but in fact something like
-10:50the state of a data structure along with
-10:54the procedures that know how to
-10:56intimately manipulate it and try and tie
-10:58those two areas together in a way that
-11:02they cannot be penetrated from the
-11:05outside when people speak of an
-11:09object-oriented programming language
-11:11like Objective C or C++ they're talking
-11:14about even less than that because
-11:17they're the encapsulation is almost a
-11:21convention it's done by means of macros
-11:25the amount of protection at runtime that
-11:29is delivered is rather low so there all
-11:33of these gradations now biological
-11:35systems encapsulate with a vengeance
-11:37because nature discovered that if you
-11:41give each cell its own little captured
-11:44ocean and let it devote about 90% of its
-11:49actual energies to simply protecting
-11:53itself from the outside world as though
-11:55the outside world were hostile then you
-11:58get a situation where you can build very
-11:59large structures rather safely and
-12:03encapsulated is not just the saline
-12:06solution not just the organic Moloch
-12:10skills but also encapsulated and not
-12:14just the programs that drive the cell
-12:17but in fact encapsulated in biological
-12:19organisms as many of you are aware is
-12:21the entire plan for the entire structure
-12:25okay now we don't generally do that when
-12:29we write an object-oriented program but
-12:31in fact people are starting to do that
-12:33now in artificial intelligence 
+Our bodies have approximately a trillion cells in them and each cell is rather complex. Each cell has many millions of components in its own right so one of the ways nature discovered to control complexity and the kinds of interactions that are likely to happen is to try and encapsulate them in various ways. This is a familiar principle to us. It's something that we use in regular program as well. Trying to encapsulate and the question you're always asking when you encapsulate, we're going to ask this quite a bit later, is just what is encapsulated. what kinds of things are we trying to control are usually in regular programming what we encapsulate are sections of programs that occasionally will encapsulate with regard to a protocol for dealing with some system we don't want to inquire about the internals of. **What biological systems encapsulate is the actual environment in which most important processing takes place. There are very few object-oriented programming languages that go that far. The average object-oriented programming language encapsulates not the environment but in fact something like the state of a data structure along with the procedures that know how to intimately manipulate it and try and tie those two areas together in a way that they cannot be penetrated from the outside.** When people speak of an object-oriented programming language like Objective C or C++ they're talking about even less than that because there the encapsulation is almost a convention. It's done by means of macros, the amount of protection at runtime that is delivered is rather low, so there all of these gradations. Now biological systems encapsulate with a vengeance because nature discovered that if you give each cell its own little captured ocean and let it devote about 90% of its actual energies to simply protecting itself from the outside world as though the outside world were hostile then you get a situation where you can build very large structures rather safely, and
+encapsulated is not just the saline solution, not just the organic molecules, but also encapsulated not just the programs that drive the cell but in fact encapsulated in biological organisms as many of you are aware is **the entire plan for the entire structure.** Now we don't generally do that when we write an object-oriented program but in fact people are starting to do that now in artificial intelligence.
 
 
 and
