@@ -8,44 +8,9 @@ I wrote my first program that I would call object-oriented in 1962 and people ha
 Our bodies have approximately a trillion cells in them and each cell is rather complex. Each cell has many millions of components in its own right so one of the ways nature discovered to control complexity and the kinds of interactions that are likely to happen is to try and encapsulate them in various ways. This is a familiar principle to us. It's something that we use in regular program as well. Trying to encapsulate and the question you're always asking when you encapsulate, we're going to ask this quite a bit later, is just what is encapsulated. what kinds of things are we trying to control are usually in regular programming what we encapsulate are sections of programs that occasionally will encapsulate with regard to a protocol for dealing with some system we don't want to inquire about the internals of. **What biological systems encapsulate is the actual environment in which most important processing takes place. There are very few object-oriented programming languages that go that far. The average object-oriented programming language encapsulates not the environment but in fact something like the state of a data structure along with the procedures that know how to intimately manipulate it and try and tie those two areas together in a way that they cannot be penetrated from the outside.** When people speak of an object-oriented programming language like Objective C or C++ they're talking about even less than that because there the encapsulation is almost a convention. It's done by means of macros, the amount of protection at runtime that is delivered is rather low, so there all of these gradations. Now biological systems encapsulate with a vengeance because nature discovered that if you give each cell its own little captured ocean and let it devote about 90% of its actual energies to simply protecting itself from the outside world as though the outside world were hostile then you get a situation where you can build very large structures rather safely, and
 encapsulated is not just the saline solution, not just the organic molecules, but also encapsulated not just the programs that drive the cell but in fact encapsulated in biological organisms as many of you are aware is **the entire plan for the entire structure.** Now we don't generally do that when we write an object-oriented program but in fact people are starting to do that now in artificial intelligence.
 
+### Basic principle of recursive design
 
-and
-12:36people who are interested can can bring
-12:38this up later so my particular
-12:52my particular motivation
-12:59when I started thinking about objects
-13:06was simply that of biological cells and
-13:11one of the things that is difficult to
-13:14escape when you look at biological cells
-13:16is first the extent to which the outside
-13:20world is kept away from the cell
-13:22membrane and then the other thing is is
-13:25that the cells aren't completely in
-13:27isolation they communicate by means of
-13:29sending messages to each other and again
-13:32the way we way we translate that into
-13:35computer terms is done in a much more
-13:40restrictive way than biology does it
-13:42biology generally communicates without
-13:44wearing who's going to receive I'm going
-13:47to talk a little bit later about a
-13:49object-oriented strategy in which
-13:52messages aren't sent at all they're only
-13:54received you might think about what an
-13:57object-oriented system might be like if
-13:59you never sent a message but objects
-14:00could receive what would they receive
-14:04all I could do is receive the
-14:07translation of this model into machine
-14:13terms for me 25 years ago or so was that
-14:19these biological cells acted a lot as
-14:22though they're on a network you can
-14:24think of it as a crossbar switch or a
-14:28Ethernet type network in which every
-14:31object can send to every other object
-14:33and each one of these things is a lot
-14:36like a little computer in fact is very
-14:42difficult in a good object-oriented
+in a good object-oriented
 14:44system to find out where the hardware
 14:47stops and the software begins and the
 14:52this notion of a little computer in the
