@@ -10,99 +10,11 @@ encapsulated is not just the saline solution, not just the organic molecules, bu
 
 ### Basic principle of recursive design
 
-in a good object-oriented
-14:44system to find out where the hardware
-14:47stops and the software begins and the
-14:52this notion of a little computer in the
-14:56in the large here is something that is
-14:59worthwhile considering when we think
-15:00about making very small things now
-15:03there's a principle in design that
-15:07people came up with many years ago it's
-15:11called the basic principle of recursive
-15:13design and the idea is make the parts
-15:16have the same power as the whole
-15:20we know in the factorial example that a
-15:25recursive program like factorial its
-15:29charm is it's able to reinvest the
-15:33conditional branches and so in some
-15:36sense the program remains as long as
-15:39that is true the program remains as
-15:41strong as it was when you entered it
-15:43because you can always reinter it
-15:45instead of getting diluted away now
-15:49another thing that that crossed my mind
-15:51when I was pondering these ideas back in
-15:54the 60s was why if that is such a
-15:58powerful idea why is it that we take a
-16:00very powerful idea like a computer and
-16:04dilute it immediately in most
-16:06programming languages divided by
-16:08dividing it up into data structures and
-16:10procedures data structures don't have
-16:13the same power as a computer they're
-16:14static can take on marks but they're
-16:18once once you get a data structure it
-16:21just sits there procedures don't have
-16:24the same power as computers because they
-16:27can't remember state they have to have
-16:29something additional so what we did in
-16:32the guise of following standard math
-16:34mathematical notation in the 50s when
-16:37Fortran was developed was to mimic
-16:40standard mathematical notation without
-16:42thinking about this basic principle of
-16:44recursive design because people didn't
-16:45write recursive programs back in the 50s
-16:48and so the baby is thrown out with the
-16:50bathwater almost immediately in a
-16:52standard procedure and data structure
-16:55language and it occurred to me and other
-16:59people who are thinking about these
-17:00ideas back then what if you didn't do
-17:04that what if the only subdivision you
-17:07ever made in a programming language was
-17:10a subdivision of a computer into a
-17:13computer you're never allowed to
-17:15subdivide the computer into something
-17:17that was less than the computer and what
-17:19does that mean that means that each
-17:21subdivision has to be something like a
-17:23black box that has inside of it some
-17:27mixture of State and process from the
-17:31outside you
-17:32can only invoke behavioral attributes
-17:36rather than invoking method attributes
-17:40and what I mean by that is this is
-17:42something that was even in Fortran
-17:44because the earlier designers of Fortran
-17:46realized that there is a very funny
-17:48correspondence between procedural things
-17:50and data structure things so for
-17:52instance when you say Si and parentheses
-17:5630 close parentheses in Fortran you
-18:00can't tell by looking at that whether
-18:02you're invoking a function or whether
-18:06you're accessing an array and that was
-18:08not accidental back then because of
-18:12course they thought of arrays as being a
-18:13kind of a function and they wanted you
-18:17to be able to write arrays huge tables
-18:21still done today in order to do
-18:25functional evaluation very quickly what
-18:28they didn't realize is that you wanted
-18:30to be able to trade-off between the two
-18:31but that notion of just saying sine 30
-18:36degrees without indicating how its to
-18:38compete be computed is the essence of
-18:41the kind of abstraction that that
-18:43object-oriented programming is all about
-18:46it's carried very far here by
-18:55this strong membrane of the object so
-18:58that what we're dealing with here are
-19:00behaviors and there are two important
-19:04implications that had to be worked out
-19:07early on one of them is that messages in
+There's a principle in design that people came up with many years ago, it's called the basic principle of recursive design and the idea is make the parts have the same power as the whole. We know in the factorial example that a recursive program like factorial, it's charm is it's able to reinvoke itself as the conditional branches and so in some sense, as long as that is true, the program remains as stong as it was when you entered it, because you can always reenter it instead of getting diluted away. Now another thing that that crossed my mind when I was pondering these ideas back in the 60s was why if that is such a powerful idea, why is it that we take a very powerful idea like a computer and dilute it immediately in most programming languages by dividing it up into data structures and procedures. Data structures don't have the same power as a computer. They're static, can take on marks, but they're once you get a data structure, it just sits there. Procedures don't have the same power as computers because they can't remember state. They have to have something additional so what we did in the guise of following standard mathematical notation in the 50s when Fortran was developed was to mimic standard mathematical notation without thinking about this basic principle of recursive design because people didn't write recursive programs back in the 50s, and so the baby is thrown out with the bathwater almost immediately in a standard procedure and data structure language. And it occurred to me and other people who are thinking about these ideas back then what if you didn't do that, what if the only subdivision you ever made in a programming language was a subdivision of a computer into a computer. You're never allowed to subdivide the computer into something that was less than the computer. And what does that mean? That means that each subdivision has to be something like a black box that has inside of it some mixture of state and process. From the outside you can only invoke behavioral attributes rather than invoking method attributes. And what I mean by that is this is something that was even in Fortran because the earlier designers of Fortran realized that there is a very funny correspondence between procedural things and data structure things so for instance when you say sin(30) in Fortran you can't tell by looking at that whether you're invoking a function or whether you're accessing an array. And that was not accidental back then because of course they thought of arrays as being a kind of a function and they wanted you to be able to write arrays (huge tables) still done today in order to do functional evaluation very quickly. What they didn't realize is that you wanted to be able to trade-off between the two, but that notion of just saying sin(30) without indicating how it is to be computed is the essence of the kind of abstraction that object-oriented programming is all about. It's carried very far here by this strong membrane of the object so that what we're dealing with here are behaviors ...
+
+### Messages in most cases cannot be commands
+
+one of them is that messages in
 19:11most cases can't be commands or you're
 19:16violating the notion of the object as
 19:18being in control now most
@@ -145,7 +57,11 @@ in a good object-oriented
 21:08to it internally as it will simply
 21:10refuse it may put you may take your name
 21:13and give it to the principal later if
-21:17you've done something wrong but so this
+21:17you've done something wrong but so 
+
+### Assignment has to be replaced by "advice"
+
+this
 21:20notion of absolute control that messages
 21:23can't be commands and the other one is
 21:27because the object is no longer a data
