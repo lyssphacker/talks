@@ -14,162 +14,19 @@ There's a principle in design that people came up with many years ago, it's call
 
 ### Messages in most cases cannot be commands
 
-one of them is that messages in
-19:11most cases can't be commands or you're
-19:16violating the notion of the object as
-19:18being in control now most
-19:21object-oriented systems today when you
-19:24do what is called sending a message you
-19:26are issuing a command Objective C C++
-19:30even small talk eighty all of those
-19:33systems a message is actually something
-19:38very very close to if not identical to a
-19:41certain kind of procedure call okay but
-19:45in fact in the original scheme and we
-19:47can talk about the implications of why
-19:49this is a good idea
-19:50later in the original object oriented
-19:54systems that were so successful messages
-19:56aren't commands at all what they are are
-19:59desires
-20:01I'd like to have this happen just to
-20:05give you an example of why imagine we
-20:07have an object masquerading as a
-20:10critical system file and the question is
-20:14it should just anybody be able to come
-20:17up and issue the command to it turn byte
-20:205 to 0 now it's done all the time but in
-20:25fact in an object-oriented system you
-20:28would like the object to be able to
-20:29protect itself so that even a person who
-20:33has a pointer to it even a person who
-20:35has the knowledge of which command is
-20:38the right command that both of those do
-20:42not imply that you have permission to
-20:45actually change that file so in the when
-20:49I talk about an object-oriented system I
-20:51mean an object in which the worst you
-20:55can do to an object is to simply
-20:57indicate to it that you would like it to
-21:00do something for you and the best that
-21:03can happen is it will do that the worst
-21:07that can happen
-21:08to it internally as it will simply
-21:10refuse it may put you may take your name
-21:13and give it to the principal later if
-21:17you've done something wrong but so 
+Messages in most cases can't be commands or you're violating the notion of the object as being in control. Now most object-oriented systems today when you do what is called sending a message you are issuing a command. Objective C, C++, even Smalltalk 80, in all of those systems a message is actually something very close to if not identical to a certain kind of procedure call. But in fact in the original scheme, we can talk about the implications of why this is a good idea, in the original object oriented systems that were so successful messages aren't commands at all, what they are are desires
+(I'd like to have this happen). Just to give you an example of why, imagine we have an object masquerading as a critical system file, and the question is, should just anybody be able to come up and issue the command to it turn byte 5 to 0? Now it's done all the time but in fact in an object-oriented system you would like the object to be able to protect itself so that even a person who has a pointer to it, even a person who has the knowledge of which command is the right command, that both of those do not imply that you have permission to actually change that file, so when I talk about an object-oriented system I mean an object in which the worst you can do to an object is to simply indicate to it that you would like it to do something for you, and the best that can happen is it will do that. The worst that can happen to it internally is it will simply refuse it, may take your name and give it to the principal later if you've done something wrong ...
 
 ### Assignment has to be replaced by "advice"
 
-this
-21:20notion of absolute control that messages
-21:23can't be commands and the other one is
-21:27because the object is no longer a data
-21:30structure in any sense that we regard it
-21:32that assignment is something that can't
-21:37be done from the outside either so the
-21:40assignment statement has to go away in
-21:42the form that we know it as an
-21:44irrevocable change to a variable or a
-21:49slot in a data structure an assignment
-21:52has to be changed by something that we
-21:53can think of as being advice or
-21:56influence so again this notion of
-22:01getting an object to to change its state
-22:04is something that we normally don't do
-22:07in object-oriented programming because
-22:09normally in object-oriented programming
-22:11we are not simply trying to imitate data
-22:13structures now to be a data structure is
-22:17that thing that if you send it to
-22:21somebody else you're giving them
-22:22permission to change it that's what I
-22:25mean by a data structure so it's clear
-22:28that some of the things that we call
-22:29data structures in normal parlance in a
-22:34system with an operating system that
-22:36offers some protection are not strictly
-22:39classical data structures by that means
-22:41certain files usually have protections
-22:44on them so that in a good operating
-22:47system when we send a file from us to
-22:51somebody else
-22:52we are not can conveying to that person
-22:55the same level of protection necessarily
-22:58that we have been granted so in a good
-23:01operating system this is this may be an
-23:03operating system that you've never seen
-23:05but there there have been operating
-23:07systems in the past there exist
-23:09operating systems now so that if you
-23:11have a certain set of permissions for a
-23:14file a and you wish to give it this file
-23:19to your friend suppose you have the
-23:22the magic permission to change the any
-23:25byte in the system file because you're a
-23:27honcho then you might wonder should I be
-23:31able to pass on those permissions to the
-23:36next person that I give this file to the
-23:39answer to good operating system is no
-23:41each person should get their own
-23:44permission separately and when they
-23:46receive this file a it's their
-23:49permissions that are granted by the
-23:51operating system that obtain not the
-23:54permissions passed on to them by
-23:56somebody who had the file before so you
-23:59can think of taking this desperately
-24:02important file passing it along and when
-24:08it goes to somebody who is less to be
-24:10trusted with it they have fewer
-24:12permissions on that there are fewer
-24:14things that they can do with it and then
-24:16they passed it on to somebody again that
-24:19may go back to a trusted person that
-24:21person should be able to reintroduce
-24:27that is called capability protection and
-24:31capability protection is again another
-24:33one of these old ideas from the 60s
-24:35intertwined in a very strong way with
-24:40object-oriented design that is now
-24:42coming back capability is simply a
-24:45technique for protecting objects in a
-24:49stronger way than normal digital
-24:51computers allow them to be done and
-24:54again at the end of the at the towards
-24:57the end of the talk we'll talk a little
-24:58bit about this so to me there are lots
-25:04of different ways of talking about
-25:06objects but probably 90% of the reason
-25:10to me for dealing with objects at all
-25:13has to do with their abilities to
-25:15protect in various ways protect by
-25:20encapsulating various kinds of things
-25:22almost always state less often control
-25:27is encapsulated and so forth then about
-25:3110 percent of the use of object-oriented
-25:34programming to
-25:35has to do with its ability in whispering
-25:39to you how you might design a system
-25:41better and just one more note about that
-25:44before I get started on the on the talk
-25:46proper and that is that the way objects
-25:52are used today is a little bit confusing
-25:55because they're intertwined with a
-25:57another set of ideas that came out of
-26:00the 70s that are very similar
-26:03particularly in implementation these
-26:05days and that's what's called data
-26:07abstraction how many people are familiar
-26:09with data abstraction as a idea okay so
-26:13data abstraction looks a lot like
-26:15object-oriented programming but its
-26:17intent is different the intent of data
-26:20abstraction is to take a system that
-26:24you're familiar with like Pascal or
-26:26Fortran that is starting to run into
-26:30difficulties of various kinds difficult
-26:33is usually a representational ones I
+Because the object is no longer a data structure in any sense that we regard it, assignment is something that can't be done from the outside either. So the assignment statement has to go away in the form that we know it as an irrevocable change to a variable or a slot in a data structure. An assignment has to be changed by something that we can think of as being advice or influence. So again this notion of getting an object to change it's state is something that we normally don't do in object-oriented programming because normally in object-oriented programming we are not simply trying to imitate data structures. Now to be a data structure is that thing that if you send it to somebody else, you're giving them permission to change it that's what I mean by a data structure. So it's clear that some of the things that we call data structures in normal parlance in a system with an operating system that offers some protection, are not strictly classical data structures by that means. Certain files usually have protections on them so that in a good operating system when we send a file from us to somebody else we are not can conveying to that person the same level of protection necessarily that we have been granted.  So in a good operating system, this may be an operating system that you've never seen, but there have been operating systems in the past, there exist operating systems now, so that if you have a certain set of permissions for a file and you wish to give it to your friend (suppose you have the the magic permission to change the any byte in the system file because you're a honcho) then you might wonder should I be able to pass on those permissions to the next person that I give this file to.  The answer for good operating system is no. Each person should get their own permission separately and when they receive this file, it's their permissions that are granted by the operating system that obtain, not the permissions passed on to them by somebody who had the file before. So you can think of taking this desperately important file, passing it along and when it goes to somebody who is less to be trusted with it, they have fewer permissions on that. There are fewer things that they can do with it and then they pass it on to somebody again that may go back to a trusted person, that person should be able to reinvoke those operations that were taken away. There are whole schemes for doing this, and is called capability protection. Capability protection is again another one of these old ideas from the 60s, intertwined in a very strong way with object-oriented design that is now coming back. Capability is simply a technique for protecting objects in a stronger way than normal digital computers allow them to be done.
+
+### Reasons for dealing with objects
+Probably 90% of the reason to me for dealing with objects at all has to do with their abilities to protect in various ways.  Protect by encapsulating various kinds of things, almost always state, less often control is encapsulated and so forth. Then about 10 percent of the use of object-oriented programming has to do with its ability in whispering to you how you might design a system better.
+
+### Data abstraction
+The way objects are used today is a little bit confusing because they're intertwined with a another set of ideas that came out of the 70s that are very similar, particularly in implementation these days and that's what's called data abstraction.  
+Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones I
 26:36think everybody's had the experience
 26:38programming in a language with data
 26:41structures you get this big system done
