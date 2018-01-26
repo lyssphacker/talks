@@ -26,8 +26,7 @@ Probably 90% of the reason to me for dealing with objects at all has to do with 
 
 ### Data abstraction
 The way objects are used today is a little bit confusing because they're intertwined with a another set of ideas that came out of the 70s that are very similar, particularly in implementation these days and that's what's called data abstraction.  
-Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones I
-26:36think everybody's had the experience
+Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones I think everybody's had the experience
 26:38programming in a language with data
 26:41structures you get this big system done
 26:44you decide you need to change your
