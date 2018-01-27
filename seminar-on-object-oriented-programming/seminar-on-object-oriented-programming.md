@@ -39,7 +39,7 @@ The reason is that at some point it's not simply a matter of piecing together so
 ### Separate outside from the inside, protocol from methods
 The main principle in object-oriented programming is to separate the outside from the inside, so on the outside we have a variety of messages that we're willing to respond to, and on the inside we have some methods that may or may not correspond to these things on the outside because whatever the idea is we're not supposed to understand what the inside looks from looking at on the outside. And outside thing might even correspond to a little data structure inside a thing. Equally innocent might correspond to an enormous amount of code. There might be code in here not directly connected to this and in fact some of the messages that the object may be able to receive aren't directly characterized in terms of some outside protocol. Lots of different variations here but the most important one here is that we're trying to separate a protocol from some methods at this level.
 
-!(slides/slide1.png)
+![slide1](slides/slide1.png)
 
 and then if we think about
 64:09going a little bit more fine-grain where
