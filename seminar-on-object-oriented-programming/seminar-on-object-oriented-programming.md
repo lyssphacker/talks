@@ -36,32 +36,10 @@ To me this is what object-oriented programming is about. It's not saving data st
 ### For programming in the large objects aren't enough
 The reason is that at some point it's not simply a matter of piecing together something that is supposed to run it's a matter of being able to verify different sections, different parts, different modules independently, to be able to unplug and replug and even I think in many cases it's desirable to allow different implementation languages to actually used.
 
-62:33so we have a glob and the main principle
-62:36in object-oriented programming is to
-62:38separate the outside from the inside so
-62:43on the outside we have a variety of
-62:48messages that we're willing to respond
-62:50to and on the inside we have some
-62:54methods oh sorry
-63:01we have some methods the may or may not
-63:06correspond to these things on the
-63:09outside cuz whatever the idea is we're
-63:10not supposed to understand what the
-63:12inside looks at from looking at me on
-63:15the outside and outside thing might even
-63:18correspond to a little data structure
-63:21inside a thing equally innocent might
-63:25correspond to an enormous amount of code
-63:27there might be code in here not directly
-63:30connected to this and in fact some of
-63:33the messages that the object may be able
-63:35to receive aren't directly characterized
-63:38in terms of some outside protocol lots
-63:43of different variations here but the
-63:45most important one here is that we're
-63:48trying to separate a protocol
-63:58from some methods
-64:07at this level and then if we think about
+### Separate outside from the inside, protocol from methods
+The main principle in object-oriented programming is to separate the outside from the inside, so on the outside we have a variety of messages that we're willing to respond to, and on the inside we have some methods that may or may not correspond to these things on the outside because whatever the idea is we're not supposed to understand what the inside looks from looking at on the outside. And outside thing might even correspond to a little data structure inside a thing. Equally innocent might correspond to an enormous amount of code. There might be code in here not directly connected to this and in fact some of the messages that the object may be able to receive aren't directly characterized in terms of some outside protocol. Lots of different variations here but the most important one here is that we're trying to separate a protocol from some methods at this level.
+
+and then if we think about
 64:09going a little bit more fine-grain where
 64:12we started having zillions of objects
 64:15interacting
