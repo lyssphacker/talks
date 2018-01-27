@@ -24,14 +24,9 @@ Because the object is no longer a data structure in any sense that we regard it,
 ### Reasons for dealing with objects
 Probably 90% of the reason to me for dealing with objects at all has to do with their abilities to protect in various ways.  Protect by encapsulating various kinds of things, almost always state, less often control is encapsulated and so forth. Then about 10 percent of the use of object-oriented programming has to do with its ability in whispering to you how you might design a system better.
 
-### Data abstraction
+### Data abstraction vs OOP
 The way objects are used today is a little bit confusing because they're intertwined with a another set of ideas that came out of the 70s that are very similar, particularly in implementation these days and that's what's called data abstraction.  
-Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones I think everybody's had the experience
-26:38programming in a language with data
-26:41structures you get this big system done
-26:44you decide you need to change your
-26:46representation and the next thing you
-26:49know you're hunting down all of the
+Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones. I think everybody had the experience programming in a language with data structures. You get this big system done, you decide you need to change your representation and the next thing you know you're hunting down all of the
 26:51procedures that think they knew about
 26:52the old representation and the rule of
 26:55the universe is that there's always one
@@ -137,7 +132,9 @@ Data abstraction looks a lot like object-oriented programming but its intent is 
 31:30than data structures they tend to be
 31:34components active machines that fit
 31:39together with other active machines to
-31:40make a new kind of structure just to
+31:40make a new kind of structure
+
+just to
 31:43give you an example of a modern attempt
 31:47at large scale object-oriented
 31:49programming which hasn't been done very
