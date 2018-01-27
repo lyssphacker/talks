@@ -26,16 +26,7 @@ Probably 90% of the reason to me for dealing with objects at all has to do with 
 
 ### Data abstraction vs OOP
 The way objects are used today is a little bit confusing because they're intertwined with a another set of ideas that came out of the 70s that are very similar, particularly in implementation these days and that's what's called data abstraction.  
-Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones. I think everybody had the experience programming in a language with data structures. You get this big system done, you decide you need to change your representation and the next thing you know you're hunting down all of the
-26:51procedures that think they knew about
-26:52the old representation and the rule of
-26:55the universe is that there's always one
-26:57or two that you don't find so you slide
-27:01in the new representation and a couple
-27:03of months later one of those procedures
-27:06is invoked and all of a sudden you have
-27:08a crash and people wonder why the answer
-27:11is the critical knowledge has actually
+Data abstraction looks a lot like object-oriented programming but its intent is different. The intent of data abstraction is to take a system that you're familiar with, like Pascal or Fortran, that is starting to run into difficulties of various kinds. Difficulties are usually a representational ones. I think everybody had the experience programming in a language with data structures. You get this big system done, you decide you need to change your representation and the next thing you know you're hunting down all of the procedures that think they knew about the old representation and the rule of the universe is that there's always one or two that you don't find so you slide in the new representation and a couple of months later one of those procedures is invoked and all of a sudden you have a crash and people wonder why. The answer is the critical knowledge has actually
 27:15been spread out in such a way that it
 27:16can't be recovered it's like what you
 27:19have to do after you do a multiplication
