@@ -41,154 +41,13 @@ The main principle in object-oriented programming is to separate the outside fro
 
 ![slide1](slides/slide1.png)
 
-and then if we think about
-64:09going a little bit more fine-grain where
-64:12we started having zillions of objects
-64:15interacting
-64:24in a sea of messages
-64:29in fact some of the
-64:36some of the objects might not even be on
-64:38the same machine they might actually be
-64:40over here a good object-oriented system
-64:46you shouldn't be able to tell what
-64:47machine you're running on that's what
-64:50messages are all about very quickly when
-64:54we're starting to build a large system
-64:56down here we've got something
-64:58interesting we have absolute protection
-64:59but we still have confusion right
-65:03because it's you can have thousands of
-65:08thousands of diamonds that are
-65:11impervious to all normal wear and tear
-65:15and still not be able to build the
-65:17simplest structure out of them they may
-65:19need to be too shiny may not be able to
-65:21pile them up they may not fit together
-65:23but by god they're perfect so what I'm
-65:27trying to say is that the the protection
-65:30issue is a critical one but it still
-65:32doesn't guarantee that you actually have
-65:34an architecture now in small talk in the
-65:40most object-oriented systems how you
-65:42come up with these guys is govern very
-65:46much by convention there's a particular
-65:50way like it's a convention in small talk
-65:52systems that one of these guys will
-65:53always be called print so that for every
-65:58object in the system you're guaranteed
-66:01that one of the messages you can send to
-66:02it is print and theoretically what that
-66:08means is this little patch of green in
-66:12here that corresponds to print is
-66:16supposed to print for you now there's
-66:18nothing in small talk or any other
-66:21object oriented system right now that
-66:24guarantees that printing is going to be
-66:28done now there was a strictly
-66:31conventional it's something that
-66:33everybody agrees to it's like
-66:35overloading operators in Ada when you
-66:39overload plus in order to give plus more
-66:43meanings for different structures you're
-66:45usually trying to adhere to something
-66:50metaphorically similar to what plus
-66:52originally stood for so for instance if
-66:55you have a plus a plus it adds two
-66:58numbers together you might overload it
-67:00to apply two arrays so that the
-67:03operation is some sort of point point
-67:07point addition maybe vector addition
-67:09sometimes you might overload strings -
-67:15what could + mean and strings well one
-67:18of the one of the ways of thinking about
-67:19strings algebraically is that plus means
-67:22concatenation because it's a way of
-67:24adding two unary numbers together and so
-67:27forth and at some point you started
-67:29stretching it as you stretch the
-67:32metaphor but generally you don't want
-67:33Plus to go off and do some sort of
-67:35multiply or something else but the only
-67:38thing that controls that is some agreed
-67:41on set of conventions and because of
-67:45that what this protocol is how
-67:48complicated it gets and so forth is the
-67:51most important part in any kind of
-67:54object-oriented design but it's also the
-67:55most fragile the fact that there's
-67:59nothing to protect print is absolutely
-68:04critical let me let me give you an
-68:05example of what we could do to protect
-68:08print
-68:17one of the things we could do is to have
-68:22instead of having print just be code we
-68:26could actually have a print class
-68:38and its offspring its instances are
-68:42actually structures that look like this
-69:15okay in other words each offspring of
-69:18print is a message method pair in which
-69:28unrestricted code writing over here is
-69:31not allowed does everybody understand
-69:34why this is an interesting idea because
-69:39so but if you could only if you can
-69:41write anything here then J random
-69:44programmer often will as you go as you
-69:49go along and the fact that the system
-69:51seems to be conventionalized at this
-69:53protocol message level which is the very
-69:57charm of object-oriented programming why
-69:59object-oriented programs work so well
-70:00why they fit together gets destroyed as
-70:04the amount of generic information in the
-70:09actual methods gets diluted but if
-70:13another way of doing an object-oriented
-70:15system is to actually make classes for
-70:20each of the major code types that you're
-70:22going to write and what you get here is
-70:24something that would insert itself in
-70:27here but in fact the only codes you're
-70:33allowed to write are certain little
-70:34restricted boxes in here and this thing
-70:37guarantees that it's going to print for
-70:39you it's not going to go off in zero
-70:41byte five of some system file this thing
-70:45because it came from a print class and
-70:47because the print class does printing
-70:49type things every piece of code that
-70:52goes into a protocol actually is going
-70:54to do something like printing and what
-70:56you're allowed now is a certain amount
-70:58of parameterization a certain amount of
-71:00freedom but the meaning of print now has
-71:04been nailed down because there's some
-71:06actual code from the print class
-71:09sticking behind here that you can't see
-71:11that's going to make every effort to
-71:14deliver a result that is what you want
-71:16this is like types in type languages
-71:21except it's stronger because it can
-71:22controls the goal of the result the goal
-71:27of the result not
-71:28the shape of the result right in a typed
-71:33language when you have a typed variable
-71:35or type procedure what you can state is
-71:39that might have some integer parameters
-71:41and I'm going to deliver a
-71:43floating-point result what you can't say
-71:47in the type statement is what the intent
-71:49of that procedure was the only intent
-71:52that you could indicate is that's going
-71:54to in it's going to give you some sort
-71:55of floating-point result you can't say
-71:58it was supposed to give you a sine or
-72:01cosine or anything else that is up to
-72:04the convention of the actual programmer
-72:09itself so what I'm just pointing out
-72:11here is that if you take a if you take a
-72:16system in which there is a protocol you
-72:20can get a lot out of it just by having
-72:22the protocol be a convention agreed on
-72:25by everybody as you go into a larger and
+### Protection does not guarantee that you have an architecture
+We started having zillions of objects interacting in a sea of messages. In fact some of the objects might not even be on the same machine, they might actually be over here. **In a good object-oriented system you shouldn't be able to tell what machine you're running on. That's what messages are all about.** Very quickly when we're starting to build a large system down here we've got something interesting, we have absolute protection but we still have confusion because you can have thousands of diamonds that are impervious to all normal wear and tear and still not be able to build the simplest structure out of them. They may be too shiny, may not be able to pile them up, they may not fit together, but they're perfect. So what I'm trying to say is that the protection issue is a critical one, but it still doesn't guarantee that you actually have an architecture. 
+
+![slide2](slides/slide2.png)
+
+### Protocol is the most important and most fragile part of object-oriented design
+How complicated protocol gets is the most important part in any kind of object-oriented design but it's also the most fragile. The fact that there's nothing to protect print is absolutely critical. Let me give you an example of what we could do to protect print. One of the things we could do is instead of having print just be code, we could actually have a print class and it's offspring, it's instances are actually structures that look like this. In other words each offspring of print is a message-method pair in which unrestricted code writing over here is not allowed. This is interesting idea because if you can write anything here then J. Random Programmer often will as you go along and the fact that the system seems to be conventionalized at this protocol-message level, which is the very charm of object-oriented programming, why object-oriented programs work so well, why they fit together gets destroyed as the amount of generic information in the actual methods gets diluted. But another way of doing an object-oriented system is to actually make classes for each of the major code types that you're going to write and what you get here is something that would insert itself in here, but in fact the only codes you're allowed to write are certain little restricted boxes in here, and this thing guarantees that it's going to print for you. It's not going to go off and zero byte five of some system file. Because it came from a print class and because the print class does printing type things every piece of code that goes into a protocol actually is going to do something like printing and what you're allowed now is a certain amount of parameterization, a certain amount of freedom, but the meaning of print now has been nailed down because there's some actual code from the print class sticking behind here that you can't see, that's going to make every effort to deliver a result. This is like types in typed languages except it's stronger because it can controls the goal of the result, the goal of the result not the shape of the result. In a typed language when you have a typed variable or typed procedure, what you can state is that might have some integer parameters and I'm going to deliver a floating-point result, what you can't say in the typed statement is what the intent of that procedure was. The only intent that you could indicate is that it's going to give you some sort of floating-point result. You can't say it was supposed to give you a sine or cosine or anything else. That is up to the convention of the actual programmer itself so what I'm just pointing out here is that if you take a system in which there is a protocol, you can get a lot out of it just by having the protocol be a convention, agreed on by everybody. As you go into a larger and
 72:28larger system that that inside out
 72:32outside Ness will protect against the
 72:35inside getting dissolved by some hostile
@@ -211,6 +70,7 @@ and then if we think about
 73:34red things four hundred concepts and say
 73:38five thousand realizations of those
 73:40concepts
+
 73:41now print is the happy exam exception to
 73:44that because if you have a 154 different
 73:47kinds of objects than their 154
