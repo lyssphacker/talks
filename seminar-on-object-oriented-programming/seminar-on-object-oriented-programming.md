@@ -62,39 +62,7 @@ In Smalltalk you can write an object, move it for one place of a particular Smal
 ### Inheritance
 Inheritance is in object-oriented languages is how you share things. It has been a goal of people in the last 20 years who do this to write very small, very reusable, very compact code. The goal is to make things that are shared as abstract and inheritable as they can possibly be. So you want the smallest number of maximally indepenent concepts that you can Tinkertoy together and have some confidence that the active Tinkertoy is going to give you something that also still works. The whole idea in object-oriented style is to linearly combine things together. 
 
-### Components
-94:48digression that as you build yourself
-94:51object-oriented tools you're much better
-94:53off worrying about the integrity of the
-94:57individual objects and then the next
-94:59thing is can an object be a component
-95:01and fit into some larger scale protocol
-95:05when I say a component I mean something
-95:07like let's say a paragraph of text or
-95:11generic gear something that actually has
-95:14a fair amount of meaning behind it might
-95:15even have its own inference engine as
-95:17part of it talking about something that
-95:20can be used in a wide variety of cases
-95:22in which the sharing is more than
-95:24parametric you're really getting not
-95:28just a class of things you're you're
-95:31sharing a notion that somebody has come
-95:34up a concept a set of concepts that
-95:36somebody has come up with this obscure
-95:43it's the hardest it's actually the
-95:47hardest thing to explain simply because
-95:50I'm gonna try another pass at it one of
-95:55the reasons it's hard to explain is that
-95:58the this notion because of ADA being
-96:01called object oriented being taught in
-96:03school as being object oriented actually
-96:05has clouded the the issue considerably
-96:08so it's very difficult to even explain
-96:12why some of these ideas are more complex
-96:15let me give you another completely
-96:18different idea this has to do with
-96:23another way of thinking about modularity
+### Modularity of control
 96:26now in most object-oriented systems the
 96:35modularity that is gotten by them is one
 96:40that is regard to the state that you put
