@@ -67,34 +67,8 @@ In most object-oriented systems the modularity that is gotten by them is one tha
 
 ![slide4](slides/slide4.png)
 
-105:33yeah well it's complicated because I'll
-105:41give you I'll give you a simple example
-105:44and then maybe we can generalize it a
-105:47little bit the motivation came from a
-105:50couple of years ago of you know
-105:53wondering why it was so easy to program
-105:55in spreadsheets and wondering what
-105:58spreadsheets would be like if there are
-105:59more object oriented I've always thought
-106:01of the spreadsheet cells as being almost
-106:03an object and spreadsheet cells have
-106:06this nice characteristic that they they
-106:09are these aren't they in other words the
-106:13very act of writing the spreadsheet
-106:15expression indicates to the rest of the
-106:17spreadsheet system what your needs are
-106:19now usually they're pretty simple needs
-106:21they're just I need to know the values
-106:23of so-and-so cells relative to where I I
-106:26am but I got interested in generalizing
-106:29that and started off with a spreadsheet
-106:34system that I did in small talk that had
-106:38a spreadsheet optimizer that first
-106:41started off simply trying to look at
-106:45places you wanted to get values from and
-106:48building a propagation network rather
-106:49than executing every cell every for
-106:52every change in this especially I think
+### Spreadsheets
+The motivation came from a couple of years ago  wondering why it was so easy to program in spreadsheets and wondering what spreadsheets would be like if there are more object oriented. I've always thought of the spreadsheet cells as being almost an object and spreadsheet cells have this nice characteristic that they are ... In other words the very act of writing the spreadsheet expression indicates to the rest of the spreadsheet system what your needs are. Now usually they're pretty simple needs. They're just, I need to know the values of so-and-so cells relative to where I am, but I got interested in generalizing that, and started off with a spreadsheet system that I did in Smalltalk that had a spreadsheet optimizer that first started off simply trying to look at places you wanted to get values from and building a propagation network rather than executing every cell every for every change. In this especially I think
 106:53most of you were aware that most
 106:54spreadsheets today do not execute every
 106:57cell there's a propagation network built
@@ -222,6 +196,7 @@ In most object-oriented systems the modularity that is gotten by them is one tha
 113:52to suggest is that we just sit still
 113:54while they change the tape is that okay
 113:57should only take them 10 seconds
+
 114:11I was brought up about what do you do
 114:15with real time in fact what do you do
 114:18with time and historically the first
