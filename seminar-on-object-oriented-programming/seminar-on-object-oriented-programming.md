@@ -68,102 +68,10 @@ In most object-oriented systems the modularity that is gotten by them is one tha
 ![slide4](slides/slide4.png)
 
 ### Spreadsheets
-The motivation came from a couple of years ago  wondering why it was so easy to program in spreadsheets and wondering what spreadsheets would be like if there are more object oriented. I've always thought of the spreadsheet cells as being almost an object and spreadsheet cells have this nice characteristic that they are ... In other words the very act of writing the spreadsheet expression indicates to the rest of the spreadsheet system what your needs are. Now usually they're pretty simple needs. They're just, I need to know the values of so-and-so cells relative to where I am, but I got interested in generalizing that, and started off with a spreadsheet system that I did in Smalltalk that had a spreadsheet optimizer that first started off simply trying to look at places you wanted to get values from and building a propagation network rather than executing every cell every for every change. In this especially I think
-106:53most of you were aware that most
-106:54spreadsheets today do not execute every
-106:57cell there's a propagation network built
-106:59by the spreadsheet compiler that you
-107:01don't see that tries to find you the
-107:06minimal number of things that have to be
-107:08executed every time the change is made
-107:11in the in the spreadsheet I started
-107:13working on that and then the next thing
-107:16is to go to billions where you're
-107:19interested in whenever something like
-107:21for instance whatever this is equal to
-107:23that I would like to do something or
-107:27whenever this is less than that I'd like
-107:28to do something and the I'll just give
-107:32you a hint of it
-107:44so they start out with this fairly
-107:50simple idea that if you have a variable
-107:52somewhere one of the things that you can
-107:57do is to link you can have a link to all
-108:05of the different places that ever need
-108:10the value of that variable and when this
-108:15changes you simply fire off all of these
-108:18guys and you get the desired result
-108:24let's take an expression now so we take
-108:30an expression like a is less than B or C
-108:39is greater than equal to D and then ask
-108:45what we'd have to do to that to make
-108:47that efficient the answer is you make
-108:50this thing into a little tree and at
-108:53each stage each node of the tree you
-108:59hold the very the value of the things so
-109:03far
-109:10so in this case the a value would be
-109:13linked through here and you can think of
-109:17the tree is pointing upwards
-109:29okay and we can presume that this let's
-109:33make this an just for the heck of it
-109:42see that this is false and we assume
-109:45that this is true and that this is false
-109:50let's do it the other way I make this
-109:52true
-109:55this false so the idea is now if it
-110:00changes the insight here is that all you
-110:03have to do is compare it to whatever the
-110:06current value of B is let's say this
-110:09goes to to true you don't have to
-110:12recompute this guy because it didn't
-110:13change it's already part of this frozen
-110:16result and then you come up and
-110:18recompute this guy so you bait what you
-110:21basically have done in this technique is
-110:23to have sorted the actual computation
-110:25that you have to make this this tech
-110:28this way of doing things is called a
-110:30continuously evaluating expression
-110:41so it's a conglomerate of things it's
-110:43actually a little computation engine
-110:44designed to compute in parallel and only
-110:48the stuff that needs to get computed
-110:50gets computed so you the computation now
-110:53the compiler instead of compiling
-110:54machine code in a system like this is
-110:56actually compiling a propagation people
-111:00are interested in these techniques I
-111:01refer you to the books on functional
-111:03programming mostly being written in
-111:07England these these days functional
-111:10program is about this and well-behaved
-111:14functional programming languages have
-111:16the property that you can take any
-111:17computation that has variables in it and
-111:21through a fairly simple compilation
-111:24change it into a network that has no
-111:27variables whatsoever but simply routing
-111:29x' for values does that sound please
-111:33please interrupt me if that's it doesn't
-111:36sound reasonable is that sound reason
-111:38it's intuitively reasonable isn't it
-111:41because what does a variable as a place
-111:43you go to to get a value but of course
-111:46you can what you really need in a
-111:48computation is simply a value delivered
-111:50you don't need the value to be anywhere
-111:51except where the operator is so by using
-111:56a combination of those techniques you
-111:59can actually remarkably enough it's
-112:07actually it's always surprising when
-112:08these things work you can actually go to
-112:12a thing that's an extreme generalization
-112:14of a spreadsheet cell that does an
-112:19enormous amount of parallel computation
-112:22but in a way in which you see none of
-112:24the interactions yourself
-112:31now because of production production
+The motivation came from a couple of years ago  wondering why it was so easy to program in spreadsheets and wondering what spreadsheets would be like if there are more object oriented. I've always thought of the spreadsheet cells as being almost an object and spreadsheet cells have this nice characteristic that they are ... In other words the very act of writing the spreadsheet expression indicates to the rest of the spreadsheet system what your needs are. Now usually they're pretty simple needs. They're just, I need to know the values of so-and-so cells relative to where I am, but I got interested in generalizing that, and started off with a spreadsheet system that I did in Smalltalk that had a spreadsheet optimizer that first started off simply trying to look at places you wanted to get values from and building a propagation network rather than executing every cell every for every change. Spreadsheets today do not execute every cell. There's a propagation network built by the spreadsheet compiler that you don't see, that tries to find you the minimal number of things that have to be executed every time the change is made in the spreadsheet. I started working on that. 
+
+### Continuously evaluating expression
+And then the next thing is to go to booleans where you're interested in for instance whenever this is equal to that I would like to do something, or whenever this is less than that I'd like to do something. And I'll just give you a hint of it. So they start out with this fairly simple idea that if you have a variable somewhere, one of the things that you can do is to link to all of the different places that ever need the value of that variable and when this changes you simply fire off all of these guys and you get the desired result. Let's take an expression. Now so we take an expression like "a < b or c >= d". Then we ask what we'd have to do to that to make that efficient. The answer is you make this thing into a little tree and at each stage each node of the tree you hold the value of the things so far. So in this case the a value would be linked through here and you can think of the tree is pointing upwards. Let's just for the heck of it see that this is false and we assume that this is true and that this is false. Let's do it the other way I make this true, this false, so the idea is now, if it changes the insight here is that all you have to do is compare it to whatever the current value of b is, let's say this goes to to true, you don't have to recompute this guy because it didn't change, it's already part of this frozen result and then you come up and recompute this guy so what you basically have done in this technique is to have sorted the actual computation that you have to make. This way of doing things is called a continuously evaluating expression. So it's a conglomerate of things, it's actually a little computation engine designed to compute in parallel and only the stuff that needs to get computed. The compiler instead of compiling machine code in a system like this is actually compiling a propagation. For people who are interested in these techniques, I refer you to the books on functional programming mostly being written in England these days. Functional programming is about this and well-behaved functional programming languages have the property that you can take any computation that has variables in it and through a fairly simple compilation change it into a network that has no variables whatsoever but simply routings for values. Variable is a place you go to to get a value but of course what you really need in a computation is simply a value delivered you don't need the value to be anywhere except where the operator is, so by using a combination of those techniques you can ... actually remarkably enough it's actually always surprising when these things work ... you can actually go to a thing that's an extreme generalization of a spreadsheet cell that does an enormous amount of parallel computation but in a way in which you see none of the interactions yourself. Now because of production production
 112:34system it it's not at odds with the
 112:37production system it's on this it's not
 112:39like ops five as an example which is a
@@ -188,14 +96,6 @@ The motivation came from a couple of years ago  wondering why it was so easy to 
 113:32like a production system you could
 113:34implement a production system using the
 113:36idea though
-113:37do you understand to say it just one it
-113:42yeah because it because some production
-113:44systems have to be executed in sorry
-113:48we're getting killed for time we only
-113:50have a half an hour so what I would like
-113:52to suggest is that we just sit still
-113:54while they change the tape is that okay
-113:57should only take them 10 seconds
 
 114:11I was brought up about what do you do
 114:15with real time in fact what do you do
