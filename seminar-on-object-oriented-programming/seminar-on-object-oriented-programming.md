@@ -75,32 +75,6 @@ And then the next thing is to go to booleans where you're interested in for inst
 
 ![slide5](slides/slide5.png)
 
-Now because of production production
-112:34system it it's not at odds with the
-112:37production system it's on this it's not
-112:39like ops five as an example which is a
-112:43production system I understand people
-112:44use here it's basically it's orthogonal
-112:50to whether there's a production system
-112:52trying to do things or not
-112:54ops five has an example in which the you
-112:58have to order the rules yourself to a
-113:01certain extent in order to in order to
-113:03get efficiency and so forth and you can
-113:08think of this as something which is
-113:11independent of whether there are rules
-113:12and I didn't say there are rules here
-113:14what I said is that what we actually are
-113:17interested in is whether there's whether
-113:20there's a set of conditions that can
-113:21deliver to me what I actually need one
-113:24of the things you could implemen actually remarkably enought with
-113:26this idea is a production system I'm not
-113:30but it doesn't lie it isn't particularly
-113:32like a production system you could
-113:34implement a production system using the
-113:36idea though
-
 114:11I was brought up about what do you do
 114:15with real time in fact what do you do
 114:18with time and historically the first
