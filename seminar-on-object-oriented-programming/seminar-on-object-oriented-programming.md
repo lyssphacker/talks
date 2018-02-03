@@ -75,6 +75,7 @@ And then the next thing is to go to booleans where you're interested in for inst
 
 ![slide5](slides/slide5.png)
 
+### Time in OOP
 114:11I was brought up about what do you do
 114:15with real time in fact what do you do
 114:18with time and historically the first
@@ -238,93 +239,8 @@ And then the next thing is to go to booleans where you're interested in for inst
 123:19automatic buffering that the system can
 123:22generate without having to be explicitly
 123:23programmed
-123:27yeah very very large how can you well
-123:51the way that's usually done is by trying
-123:53to again it's that you know the stuff
-123:57isn't a panacea but what you usually try
-124:00and do is when you write a device driver
-124:04in an object-oriented language what you
-124:06try and do is ask what devices are
-124:09likely to be like this device now what
-124:12is this like so when you write when
-124:17people do a user interface and an
-124:19object-oriented language usually they
-124:21don't write a driver for the mouse or
-124:23for a tablet or anything else what they
-124:25come up with is an abstraction of what
-124:28it means to it's usually call a pick
-124:30device it's an abstraction of what it
-124:32means to be able to do selection and
-124:35tracking and then one programmer at one
-124:39time writes code for that and then if
-124:42you come up in a system and it has a
-124:44specific device you may have to write a
-124:46line or two of additional code but it's
-124:48written in a subclass below that the
-124:51main driver is already written already
-124:52been written in it's um it's not just
-124:55doesn't just serve as the code for what
-124:56you're doing it serves as the model for
-124:59how you treat the actual devices when
-125:01they're put in there so I'm part of the
-125:04part of the the charm of the system is
-125:07to be able to get away from the from the
-125:10particular as much as possible and
-125:13program as much as possible in the
-125:15general case the whole act of
-125:20subclassing is basically saying to
-125:21something I want something just like you
-125:23accept and the theory behind this which
-125:28seems to work is that it is much easier
-125:29to program differentially than it is to
-125:32program from scratch it's much easier if
-125:34you see something that is like what you
-125:36want and you can get it
-125:38in a way that um doesn't damage anything
-125:42else then if all you could make have to
-125:45make as incremental changes to it then
-125:47you should be way ahead that's not
-125:50always true you know there are always
-125:53pathological cases always pathological
-125:56cases but generally speaking like this
-125:58is an example where the whole strategy
-126:01once it was thought out was realized oh
-126:04yeah this is something we can use it's
-126:05not just for user interfaces we can use
-126:07it for every kind of device drivers we
-126:09can use it for every kind of real-time
-126:11stuff where we have two different clocks
-126:14going at two different rates and we're
-126:15trying to synchronize in some way why
-126:18should we have to write this over and
-126:20over again why should some program we
-126:21have to figure it out over and over
-126:23again it's not that we have the solution
-126:24to every possible problem but what we're
-126:26saying is we've got a solution it's the
-126:2980/20 rule get a solution to the
-126:32eightieth you know 80% of all of the
-126:34code you're ever going to have to write
-126:35if you can put that into a superclass
-126:39and then distribute it automatically as
-126:42part of the solution so small so small
-126:43that when you when you're doing a
-126:46viewing operation and small talk you
-126:48don't even have to think to yourself
-126:49whether you should worry about
-126:52synchronization or not until long after
-126:56you may decide that you need it then you
-126:58just have it oh it's already in here I
-126:59just got it for free when I subclass the
-127:01class view well try think like I say an
-127:06ADA it's a little bit harder because you
-127:08can't do those super classes that have
-127:10all those goodies lying in there you
-127:12have to you can do it with a macro
-127:14operation people do to super classing
-127:17and ADA by making macros that allow them
-127:21to do a kind of copying and stuff
-127:48No well in small talk no you can small
+
+small
 127:53talk allows you to dynamic basically
 127:55small talk has no concept of loading
 127:59code so everything is there
@@ -386,6 +302,8 @@ And then the next thing is to go to booleans where you're interested in for inst
 130:36people who aren't part of the same group
 130:38and so forth that you really have to
 130:39have a configurations language and the
+
+### Really good superclasses don't do much except act as really good binding mechanisms
 130:41super classes are the ones that you want
 130:43to have most understood and most nailed
 130:46down in particular the for instance in
@@ -402,6 +320,8 @@ And then the next thing is to go to booleans where you're interested in for inst
 131:20superclasses don't do much except act as
 131:23really good binding mechanisms for other
 131:27stuff that's going on
+
+### Phantom objects
 131:39yeah
 131:43yes there is you can but again the the
 131:48original the original small talk for
