@@ -83,129 +83,16 @@ programming as time has entirely to do with who can view what when. So it's a vi
 another. The first question I just should ask everybody this is absurdly simple once you see it, but the first question is when should I not be viewing the object? When it's in transition, right. So it means I have to have at least a two-phase clock. So the object really has two states. It's going in one as it's trying to settle itself to what it thinks as a stable state and the other one is one that's going to allow itself to be viewed. We can do that and it's sort of a diagram here. So what we're saying is that when the object is computing we can't view and when the object is viewing we can't compute. That's not always useful. Sometimes this viewing thing is very long. So the viewing can actually hold up the progress of the computation and so what can we do there to break this rigid synchrony, we could arrange a slippage model so we let the object compute and what we take is a copy of it that we let the viewer view and so the object in simulation can have quite a number of phases as it goes along, and every once in a while we get to view it. What's interesting is in an object-oriented system this slippage model is usually computed automatically by the object in the view both of which are objects. When you hook the view up to the object what they do is exchange information because one of the things that the object has some sense
 about is how long it takes to settle it's state. Typically the view has some sense about how long it takes to abstract the view and so they actually arrange and build a little buffer in between themselves and that buffer has the actual amount of information to allow the slippage to happen. So the way this intertwines with doing real-time and deterministic computing is almost all real-time solutions to queuing problems knowing some sort of determinism they actually aren't completely deterministic. What you usually do is you're saying, I have some limits that I want to guarantee the computation is going to take place in, between it I'm going to do enough buffering to make sure that those limits get down. So for instance when you're doing real-time reading of records from fast disks and so forth you set up buffer areas because you don't want to have to have real time constraints in every part of your real time computation. In an object-oriented system these are usually handled by having what's called a viewing model. Smalltalk has one called "models views and controllers" which is quite general and has the facilities in it for generating all manner of slippage models in between by you putting on the outside what it is that you actually need to know from these objects at some point.
 
-small
-127:53talk allows you to dynamic basically
-127:55small talk has no concept of loading
-127:59code so everything is there
-128:02dynamically into there and at any point
-128:05you can go in examine any piece of code
-128:08in the system you can rewrite any piece
-128:09of code in a production case you really
-128:12don't want to allow just anybody to go
-128:15in and rewrite a superclass because of
-128:19course the work it's really bad if they
-128:21if the superclass starts doing something
-128:24different
-128:25generally when people go to rewrite a
-128:26super classes to improve the algorithm
-128:29that hundreds of applications are
-128:32already using like you may go in and
-128:34improve the sort algorithm yeah
-128:51right that's why I was talking about the
-128:55configuration so my belief is that in a
-128:58production case you must have something
-129:00like the configuration setup or else
-129:05it's just too fragile it's not it's it's
-129:09fragile in a funny way because in small
-129:10talk we used to give $5 bills away to
-129:15anybody who could crash the Smalltalk
-129:17system it's very hard to crash an a good
-129:21object-oriented system because there
-129:22isn't anything you can get to that where
-129:24you can actually hurt more than one
-129:26layer of thing and then the system's
-129:29says hey wait a minute what are you
-129:30doing
-129:30like in the small talk debugger as
-129:34you'll discover I think there's a
-129:35tutorial coming up has the anytime
-129:38there's any kind of an error the system
-129:42doesn't crash there was there's no
-129:44concept of crashing the error is simply
-129:47set aside as just another process and
-129:50once when we were debugging the system
-129:52we found 1,700 suspended errors waiting
-129:57for somebody to take care of them and so
-129:59I'll talk didn't care you know it's just
-130:00an error comes up fine you know um set
-130:04it aside it's right there you can go
-130:06back to it anytime you want but keep on
-130:07running it just keeps on running so the
-130:11that's one of the reasons why we didn't
-130:13do a configuration language because we
-130:15were programming in the small and you
-130:16couldn't hurt yourself
-130:18so as the the worst he could have
-130:20happened was something annoying they
-130:23would come up but it wouldn't crash what
-130:25you're doing so somebody who fixed it or
-130:28make a note of it but I think that's
-130:29intolerable in the production sense
-130:33where you really don't well you have
-130:36people who aren't part of the same group
-130:38and so forth that you really have to
-130:39have a configurations language and the
-
 ### Really good superclasses don't do much except act as really good binding mechanisms
-130:41super classes are the ones that you want
-130:43to have most understood and most nailed
-130:46down in particular the for instance in
-130:53small talk it's often to make things
-130:56like the sorting stuff parametric so
-131:00you're actually sending in sorting
-131:03objects that will do sorting for you
-131:05as parameters rather than even putting
-131:09that in embedding that into the the code
-131:12just because you don't want somebody to
-131:13try and change it that way you'd rather
-131:14have it be something separate that you
-131:17can dynamically bind in really good
-131:20superclasses don't do much except act as
-131:23really good binding mechanisms for other
-131:27stuff that's going on
+Superclasses are the ones that you want to have most understood and most nailed down. In particular for instance in
+Smalltalk it's often to make things like the sorting stuff parametric so you're actually sending in sorting objects that will do sorting for you as parameters rather than embedding that into the the code just because you don't want somebody to
+try and change it that way, you'd rather have it be something separate that you can dynamically bind in. Really good superclasses don't do much except act as really good binding mechanisms for other stuff that's going on.
 
 ### Phantom objects
-131:39yeah
-131:43yes there is you can but again the the
-131:48original the original small talk for
-131:50example didn't use a kind of procedure
-131:53call in order to send it really acted as
-131:57though you're on a network and if you're
-132:00interested in what order things had to
-132:03be done in they they could actually be
-132:06stamped and recued at the other end and
-132:09people do do that when when you run
-132:12small talk over the network people make
-132:15the connection to the network by having
-132:17what are called phantom objects and a
-132:20phantom object is a stand-in from the
-132:22object you're trying to send the net
-132:23right because you're always sending a
-132:24message to something
-132:26so suppose yours suppose your
-132:39so if you're over here and you think
-132:45you're sending a message what you think
-132:47you're doing is sending a message from
-132:49object a to object B and but they may be
-132:53on different machines and so what may be
-132:55really going on is object a is sending a
-133:01version of object B
-133:11which is really going over the network
-133:14to the real be again these are called
-133:18Panem objects and usually there's just
-133:21one class of them and whatever you're
-133:24distributing a copy a computation
-133:26usually the environment for the objects
-133:31just consists of a few local objects and
-133:35the rest of them are phantom objects the
-133:36phantom objects take care of all the the
-133:38network stuff and synchronizations and
-133:43reorderings and other kinds of things
-133:44that you have to do when you're going to
-133:45slower slower media that's a
-133:49well-established technique and any good
-133:51object-oriented language you can set
-133:53that up literally in an afternoon today
+Original Smalltalk for example didn't use a kind of procedure call in order to send, it really acted as though you're on a network and if you're interested in what order things had to be done in, they could actually be stamped and requeued at the other end and people do that when you run Smalltalk over the network, people make the connection to the network by having what are called phantom objects. Phantom object is a stand-in from the object you're trying to send the message to. 
+So if you're over here and you think you're sending a message, what you think you're doing is sending a message from object A to object B. But they may be on different machines and so what may be really going on is object A is sending to a version of object B which is really going over the network to the real B. Again these are called phantom objects and usually there's just one class of them. Usually the environment for objects consists of a few local objects and the rest of them are phantom objects. Phantom objects take care of all the the network stuff and synchronizations and reorderings and other kinds of things that you have to do when you're going to slower slower media. That's a well-established technique and in any good object-oriented language you can set that up literally in an afternoon.
+
+![slide6](slides/slide6.png)
 
 ### Sending an object, not just a message
 133:57oh it's quite instructive to think about
