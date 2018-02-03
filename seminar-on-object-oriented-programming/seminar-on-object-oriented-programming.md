@@ -63,71 +63,8 @@ In Smalltalk you can write an object, move it for one place of a particular Smal
 Inheritance is in object-oriented languages is how you share things. It has been a goal of people in the last 20 years who do this to write very small, very reusable, very compact code. The goal is to make things that are shared as abstract and inheritable as they can possibly be. So you want the smallest number of maximally indepenent concepts that you can Tinkertoy together and have some confidence that the active Tinkertoy is going to give you something that also still works. The whole idea in object-oriented style is to linearly combine things together. 
 
 ### Modularity of control
-In most object-oriented systems the modularity that is gotten by them is one that is regard to the state that you put in  each object. What isn't modular is the control. This is another set of issues to talk about. So for example one of the things that you may see when you're looking into an object-oriented programming is you may see the state and each neatly encapsulated but you may see control going all over the place. What happens when you send a message? The answer is often, I don't know. Goes here, goes there, and find somebody here, talks to this guy, dozens of things happen. And I can't even tell whether control is ever going to get back to me. That's often the state of affairs. Now what would happen if we actually made control modular? We'd have something more like this, where instead of control going through the objects, the objects themselves are sitting in a sea of messages but they don't actually originate them themselves. How is that possible? Well one way you can imagine for it to be possible is for the objects to simply say I need to know the following. Object-oriented system we've just developed at Apple, one that we did at MIT, is an object-oriented system in which you never send a message, only receive. How is it possible? Well the system contrives to make the messages get to you by looking at your needs and looking around to see who might supply those needs. Suppose your a button whose job is to move the corner of a window. So one of the ways of programming that is for you to be in a loop, constantly looking to see if the mouse is coming into you. It's a polling solution to the problem where somebody is polling somewhere but you're constantly looking to see whether the mouse is coming in. When the mouse comes in then you say, now I know what to do. I'm going to latch on to the mouse's coordinates and, I'm going to tell my window owner exactly how he should be moved around and so as we move around the corner, the window corner moves around itself and so that's this kind of style of programming. Control is explicit. We have to poll to find out things that are going on. The other way of doing it is I could just say I need to know when the mouse comes in to me and then I can do my job. This is like an on condition. But it's an on condition that has to be scoped because we can't have it happening every time, for instance the mouse button goes down. But we can imagine that this guy can say, I have a set of conditions, I'm not going to explicitly look for it, I'm just going to tell the world that if I had these conditions come true for me then I would be able to fulfill my obligations to the rest of the system. I'd know what to do likewise. The window that encloses this guy could also have a set of conditions that say, if my corner starts moving I should probably move too, I'll change my size if he moves so if only somebody would let me know that hen I'll go along. This is like this is like constraint programming. We're going from a procedural style which controls past explicitly, to a declarative style in which we are simply indicating needs and the system without having to do any problem-solving is picking up the slack by providing the actual information in the forms of messages. HyperCard has this about half way. It's a technique we've been experimenting with at Apple for the last couple of years and what it looks like it's able to do is to completely remove the necessity for actually being able to follow a control flow. what does
-102:09this mean when you move an object from
-102:11one place to another
-102:19when you move an object from some place
-102:22into this kind of situation nothing is
-102:26going to happen with sorry kind of a
-102:30tiny screen isn't it and you put in when
-102:33you move a new object in here in this
-102:36kind of situation nothing is going to
-102:38happen to that object unless you go in
-102:40and recode somebody else in order to
-102:42send it some messages right and so my
-102:47modularity of being able to move an
-102:49object from one place to another depends
-102:52on me being able to do some kind of
-102:54modification and the system is already
-102:56there that's not so good it's good in
-102:59the sense that this object is guaranteed
-103:01not to hurt anybody and it's going to
-103:04protect its own self from being moved
-103:06around but in fact I still have to go in
-103:08and make some sort of modification in
-103:11order to get control the flow when I
-103:19put in a new blue guy here
-103:29and he has all his needs specified is he
-103:34going to be able to run why
-103:44because he doesn't have because the
-103:47whole idea is that he's not intertwined
-103:51with anybody else's control he's simply
-103:54saying I know what I need god damn it
-103:58then the question is can the system
-104:00actually deliver those needs just
-104:02because he's a new thing and the answer
-104:04seems to be yes this is a peek into the
-104:07object-oriented programming of the next
-104:09couple of years in interesting you know
-104:12if this the need to do things this way
-104:14came out of yet another project with
-104:16children all of the object-oriented
-104:18stuff has developed at Park and the
-104:21Macintosh user interface came from a set
-104:25of designs to try and allow children to
-104:30do serious programming on a computer
-104:32that was what forced object-oriented
-104:34programming out into the open the last
-104:37set of stuff that we've been doing with
-104:38children at Apple forced this out of the
-104:41open because we wanted children younger
-104:42than nine to be able to program and
-104:45children younger than nine have a very
-104:46hard time following control flow of
-104:49course when we're thinking about that
-104:51we're thinking well of course they have
-104:52a hard time following control flow so do
-104:54we except where you see the problem is
-104:59adults are used to suffering so it's why
-105:04I like why I like to design for children
-105:06so designing this new programming
-105:08language for children I'm going to give
-105:10you a little example of some of the
-105:11stuff programmed in it this notion of
-105:17making control completely modular by
-105:20going to a needs thing became apparent
-105:23yes
-105:27yes
+In most object-oriented systems the modularity that is gotten by them is one that is regard to the state that you put in  each object. What isn't modular is the control. This is another set of issues to talk about. So for example one of the things that you may see when you're looking into an object-oriented programming is you may see the state and each neatly encapsulated but you may see control going all over the place. What happens when you send a message? The answer is often, I don't know. Goes here, goes there, and find somebody here, talks to this guy, dozens of things happen. And I can't even tell whether control is ever going to get back to me. That's often the state of affairs. Now what would happen if we actually made control modular? We'd have something more like this, where instead of control going through the objects, the objects themselves are sitting in a sea of messages but they don't actually originate them themselves. How is that possible? Well one way you can imagine for it to be possible is for the objects to simply say I need to know the following. Object-oriented system we've just developed at Apple, one that we did at MIT, is an object-oriented system in which you never send a message, only receive. How is it possible? Well the system contrives to make the messages get to you by looking at your needs and looking around to see who might supply those needs. Suppose your a button whose job is to move the corner of a window. So one of the ways of programming that is for you to be in a loop, constantly looking to see if the mouse is coming into you. It's a polling solution to the problem where somebody is polling somewhere but you're constantly looking to see whether the mouse is coming in. When the mouse comes in then you say, now I know what to do. I'm going to latch on to the mouse's coordinates and, I'm going to tell my window owner exactly how he should be moved around and so as we move around the corner, the window corner moves around itself and so that's this kind of style of programming. Control is explicit. We have to poll to find out things that are going on. The other way of doing it is I could just say I need to know when the mouse comes in to me and then I can do my job. This is like an on condition. But it's an on condition that has to be scoped because we can't have it happening every time, for instance the mouse button goes down. But we can imagine that this guy can say, I have a set of conditions, I'm not going to explicitly look for it, I'm just going to tell the world that if I had these conditions come true for me then I would be able to fulfill my obligations to the rest of the system. I'd know what to do likewise. The window that encloses this guy could also have a set of conditions that say, if my corner starts moving I should probably move too, I'll change my size if he moves so if only somebody would let me know that hen I'll go along. This is like this is like constraint programming. We're going from a procedural style which controls past explicitly, to a declarative style in which we are simply indicating needs and the system without having to do any problem-solving is picking up the slack by providing the actual information in the forms of messages. HyperCard has this about half way. It's a technique we've been experimenting with at Apple for the last couple of years and what it looks like it's able to do is to completely remove the necessity for actually being able to follow a control flow. What does this mean when you move an object from one place to another? When you move an object from some place into this kind of situation nothing is going to happen to that object unless you go in and recode somebody else in order to send it some messages. So my modularity of being able to move an object from one place to another depends on me being able to do some kind of modification and the system is already there. That's not so good. It's good in the sense that this object is guaranteed not to hurt anybody and it's going to protect its own self from being moved around, but in fact I still have to go in and make some sort of modification in order to get control the flow. When I put in a new blue guy here and he has all his needs specified, is he going to be able to run and why? Whole idea is that he's not intertwined with anybody else's control. He's simply saying, I know what I need.  Then the question is can the system actually deliver those needs just because he's a new thing and the answer seems to be yes. This is a peek into the object-oriented programming of the next couple of years.
+
 105:33yeah well it's complicated because I'll
 105:41give you I'll give you a simple example
 105:44and then maybe we can generalize it a
