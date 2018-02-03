@@ -76,169 +76,12 @@ And then the next thing is to go to booleans where you're interested in for inst
 ![slide5](slides/slide5.png)
 
 ### Time in OOP
-114:11I was brought up about what do you do
-114:15with real time in fact what do you do
-114:18with time and historically the first
-114:28object-oriented programs that were done
-114:30outside of machine code were done in a
-114:33programming language called Simula and
-114:36Simula had this way of looking at time
-114:38the Simula he had
-114:47a bunch of objects
-114:53one for each entity that you're trying
-114:57to model so the
-115:05these guys might be modeling pipes
-115:14and so forth and the blue the blue guys
-115:16might be modeling reactors in a chemical
-115:23plant or something like that but
-115:27basically as far as seeing they're
-115:28concerned they're all objects they're
-115:31all trying to execute at once trying to
-115:37get to the new trying to move advance
-115:40the entire system time and they had this
-115:44problem of if you have a system time the
-115:46system clock that's going on
-115:48how can you compute because you might
-115:52actually run out of time for computing
-115:57before you can actually advance to the
-115:58next system time so what the similar
-115:59people realize that they wanted to do
-116:03was in between the system clock so
-116:07system clock might be one and the next
-116:13time any of these guys had to compute
-116:17was two so what it would do is it would
-116:23do all of the computing in between the
-116:29ticks of the clock so the computing was
-116:31actually outside the space of the
-116:32simulation so Simula this is a non
-116:36real-time situation simular running on a
-116:39mainframe would compute an arbitrary
-116:40amount in between each state change so
-116:44guarantee that each as much as it could
-116:46possibly do it would settle down the
-116:48state of each one of these objects
-116:50during this time when they were all in
-116:53process as soon as that that had
-116:55happened then it would say okay now I
-116:57can go to the next time on the clock it
-116:58is now - what do I have to do now then
-117:02the clock could be frozen would compute
-117:03like mad again advance the clock again
-117:06now of course there's a huge conflict
-117:10that's the way you generally do it when
-117:12you're doing object-oriented program
-117:14huge conflict between this and when you
-117:16want to do real-time things because um
-117:19real-time things you don't get to stop
-117:21the clock the clock is moving along
-117:25and of course one of the answers is if
-117:29you don't have enough computing power to
-117:31compute before the next time the clock
-117:34ticks then you're dead anyway
-117:36okay so let's assume that we have enough
-117:38computing power and just to ask what we
-117:42can do an object an object-oriented
-117:44design to reconcile what time actually
-117:49means and the way people generally think
-117:54about time and object-oriented
-117:55programming as time has entirely to do
-117:57with who can view what when so it's a
-118:02viewing operation so let's suppose we
-118:04have our objects here and we have some
-118:10views
-118:18attached to the objects we can ask what
-118:22is it like if one object is viewing
-118:24another
-118:30the first question I just should ask
-118:32everybody this is absurdly simple once
-118:37once you see it but the first question
-118:40is when should I not be viewing the
-118:42object when it's in transition right so
-118:49it means I have to have at least a
-118:51two-phase clock so the object really has
-118:58two two states it's going in one is it's
-119:00trying to settle itself to what it
-119:02thinks as a stable state and the other
-119:04one is one that's going to allow itself
-119:06to be viewed
-119:07okay so mmm let's we can do that and
-119:11it's sort of a sort of a diagram here
-119:19so here's the here's the object and
-119:23here's the view so what we're saying is
-119:27that when the object is computing we
-119:30can't view and when the object is
-119:34viewing we can't compute
-119:45so we're gonna have a bunch of these
-119:48little phases like this now that's not
-119:53always useful sometimes this viewing
-119:58thing is very long so the viewing can
-120:02actually hold up the progress of the
-120:04computation and so what can we do there
-120:11this is suggested by actually this model
-120:14so far just just curious to see if it
-120:16suggests anybody what would be a good
-120:17thing to do if to break this rigid
-120:22synchrony we have what can you do yeah
-120:27we could that's what's called slippage
-120:30so we could actually arrange a slippage
-120:32model so we let the as before as we had
-120:37before we let the object compute and
-120:41what we take is a copy of it that we let
-120:47the viewer view
-120:54and so the object in simulation can have
-120:57an quite a number of phases as it goes
-121:00along and every once in a while we get
-121:07to view it
-121:13we take let's say we take this guy right
-121:15here okay now what's interesting is in
-121:20an object-oriented system this slippage
-121:23model is usually computed automatically
-121:25by the the object in the view both of
-121:29which are objects when you hook the view
-121:31up to the object what they do is
-121:34exchange information because one of the
-121:36things that the object has some sense
-121:37about is how long it takes it to settle
-121:40it state typically the view has some
-121:43sense about how long it takes to
-121:44abstract the view and so they actually
-121:46arrange and build a little buffer in
-121:53between themselves and that buffer has
-121:55the actual amount of information to
-121:59allow the slippage to happen so the way
-122:02this intertwines with doing real-time
-122:03and deterministic computing is almost
-122:06all real-time solutions to queuing
-122:12problems knowing some sort of
-122:15determinism they actually aren't
-122:16completely deterministic what you
-122:18usually do is you're saying I have some
-122:20limits that I want to guarantee the
-122:25computation is going to take place in
-122:26between it I'm going to do enough
-122:27buffering to make sure that those limits
-122:30get down so for instance when you're
-122:32doing real-time reading of records from
-122:36Fast disks and so forth you set up
-122:39buffer areas because you don't want to
-122:42have to have real kind time constraints
-122:44in every part of your real time
-122:47computation in an object-oriented system
-122:50these are usually handled by having
-122:54what's called a viewing model small talk
-122:57has one called models views and
-122:58controllers which is quite general and
-123:00has the facilities in it for generating
-123:03all manner of slippage models in between
-123:06by you putting on the outside what it is
-123:09that you actually need to know from
-123:11these objects at some point of course
-123:13you can break it down there's no real
-123:15time system you cannot break down but
-123:18this gives you the maximum amount of
-123:19automatic buffering that the system can
-123:22generate without having to be explicitly
-123:23programmed
+What do you do with time? Historically the first object-oriented programs that were done outside of machine code were done in a programming language called Simula. Simula he had a bunch of objects, one for each entity that you're trying to model, so these guys might be modeling pipes, and the blue guys might be modeling reactors in a chemical plant or something like that, but basically as far as seeing they're all objects, they're all trying to execute at once, trying to advance the entire system time and they had this problem of if you have a system time, the system clock that's going on, how can you compute because you might actually run out of time for computing before you can actually advance to the next system time, so what people realized that they wanted to do was in between the system clock ... so system clock might be one and the next time any of these guys had to compute was two so what it would do is it would do all of the computing in between the ticks of the clock so the computing was actually outside the space of the simulation, so this is a non real-time situation ... Simula running on a mainframe would compute an arbitrary amount in between each state change so guarantee that each as much as it could possibly do it, would settle down the state of each one of these objects during this time when they were all in
+process. As soon as that had happened then it would say, now I can go to the next time on the clock, it is now - what do I have to do now? Then the clock could be frozen would compute like mad again, advance the clock again. Now of course there's a huge conflict. That's the way you generally do it when you're doing object-oriented program. Huge conflict between this and when you want to do real-time things because real-time things you don't get to stop the clock. The clock is moving along
+and of course one of the answers is, if you don't have enough computing power to compute before the next time the clock ticks then you're dead anyway. So let's assume that we have enough computing power and just to ask what we can do in an object-oriented design to reconcile what time actually means. The way people generally think about time and object-oriented
+programming as time has entirely to do with who can view what when. So it's a viewing operation. So let's suppose we have our objects here and we have some views attached to the objects. We can ask what is it like if one object is viewing
+another. The first question I just should ask everybody this is absurdly simple once you see it, but the first question is when should I not be viewing the object? When it's in transition, right. So it means I have to have at least a two-phase clock. So the object really has two states. It's going in one as it's trying to settle itself to what it thinks as a stable state and the other one is one that's going to allow itself to be viewed. We can do that and it's sort of a diagram here. So what we're saying is that when the object is computing we can't view and when the object is viewing we can't compute. That's not always useful. Sometimes this viewing thing is very long. So the viewing can actually hold up the progress of the computation and so what can we do there to break this rigid synchrony, we could arrange a slippage model so we let the object compute and what we take is a copy of it that we let the viewer view and so the object in simulation can have quite a number of phases as it goes along, and every once in a while we get to view it. What's interesting is in an object-oriented system this slippage model is usually computed automatically by the object in the view both of which are objects. When you hook the view up to the object what they do is exchange information because one of the things that the object has some sense
+about is how long it takes to settle it's state. Typically the view has some sense about how long it takes to abstract the view and so they actually arrange and build a little buffer in between themselves and that buffer has the actual amount of information to allow the slippage to happen. So the way this intertwines with doing real-time and deterministic computing is almost all real-time solutions to queuing problems knowing some sort of determinism they actually aren't completely deterministic. What you usually do is you're saying, I have some limits that I want to guarantee the computation is going to take place in, between it I'm going to do enough buffering to make sure that those limits get down. So for instance when you're doing real-time reading of records from fast disks and so forth you set up buffer areas because you don't want to have to have real time constraints in every part of your real time computation. In an object-oriented system these are usually handled by having what's called a viewing model. Smalltalk has one called "models views and controllers" which is quite general and has the facilities in it for generating all manner of slippage models in between by you putting on the outside what it is that you actually need to know from these objects at some point.
 
 small
 127:53talk allows you to dynamic basically
@@ -363,6 +206,8 @@ small
 133:49well-established technique and any good
 133:51object-oriented language you can set
 133:53that up literally in an afternoon today
+
+### Sending an object, not just a message
 133:57oh it's quite instructive to think about
 133:59what it means not to send just a message
 134:02but to send an object from one place to
@@ -395,209 +240,8 @@ small
 135:15so you can think of the network of
 135:18objects as constantly rebalancing itself
 135:21as to where the code actually is
-135:35I think I believe that's true and from
-135:42Park
-135:43yeah it's written it's been written up
-135:49yeah well my message to you is this is
-135:52the same reason I told you the Arthur
-135:53Andersen story is they have exactly the
-135:56same you know their their attitude to me
-136:01was kind of interesting they said they
-136:03went to several phases and this is
-136:05probably you're in one of these phases
-136:07right now as well it went through one
-136:09phase where the first phase with objects
-136:12it was like magic God all the things you
-136:14could do code is so small the second
-136:16phase was complete disillusionment when
-136:19they realize that for instance small
-136:21talk which they were using as a model
-136:23didn't scale they said you know what is
-136:26you know is this the emperor's new
-136:28clothes or what and I said no it's just
-136:31because the part of the reason small
-136:34talk wasn't built to scale was simply
-136:36because we were able to do an enormous
-136:39amount with very tiny programs and we're
-136:43designing for children anyway and when
-136:47you want to use these ideas and they're
-136:48in the in the large I believe that you
-136:51have to do a little bit more then you
-136:53can go out on the street and buy that's
-136:55what I'm my message to you is that and
-137:00it was to Arthur Anderson that you know
-137:02a lot about what it can once you've
-137:05learned the object-oriented style which
-137:07I believe is the right way a protecting
-137:09state of the right way of making
-137:12components the right way of making urns
-137:14superclasses right way of sharing
-137:16there's a whole bunch of right things
-137:17about it in order to make it work in the
-137:20large you then have to sit down and
-137:23protect that by coming up with a
-137:25configuration language and you can do
-137:27yourself a lot of good by doing that
-137:30carefully because the configuration
-137:32language can include languages that you
-137:34already have hundreds of programmers
-137:36that know how to write in in other words
-137:39the configuration language can be a way
-137:41of protecting programs that are already
-137:44written in COBOL and Fortran as well as
-137:48new programs written in Ada it should be
-137:49a really separate way you think of isn't
-137:52and the architecture is opposed to the
-137:54bricks of actually building the thing
-137:57the architecture to me rules life is an
-138:00architecture it wasn't
-138:02as early as the turn of the century
-138:04there are people that thought memory
-138:05there's the stuff called protoplasm
-138:07written about in books was supposed to
-138:11be some special kind of material that
-138:13you can build living things out of
-138:14because people didn't believe that
-138:16ordinary chemicals could bake you could
-138:19make a living thing out of it wasn't
-138:21really until 20 or 30 years ago that it
-138:24was really shown quite definitively that
-138:28we actually are just an architecture in
-138:30fact we know now that the atoms in our
-138:33body are actually recycled about every
-138:35seven years so you and I as individuals
-138:39are patterns in space the material is
-138:42moving through we don't have the same
-138:45atoms in our bodies that we had seven
-138:47years ago we are a pattern and
-138:50interesting things made out of the
-138:53patterns you have - you know I have to
-138:55have some understanding of the bricks
-138:56and stuff which I think everybody is
-138:58getting now but at some point you'll
-139:00realize that the power of this stuff
-139:02isn't from what the bricks do and that
-139:04the bricks are have integrity the power
-139:08of the stuff is from the architectures
-139:11that you can create and the
-139:12architectures have just been scratched
-139:15now up until really a couple of years
-139:19ago there probably been less than a god
-139:21I don't know 100 or 200 people over two
-139:24decades actually doing this stuff so
-139:28it's the and the problems that have been
-139:32worked on have tended to be small the
-139:35reason I believe that object-oriented
-139:36programming works well in the large is
-139:38simply because it works well in the
-139:40biological world and I see no reason why
-139:42it is going to fall down in any way when
-139:46we go large but in order to in order to
-139:49make it work we have to either look at
-139:51the biological world war which is the
-139:55biological reason of urging can a
-139:57configuration language or we have to go
-139:59after for other reasons of just
-140:01realizing hey this stuff gets fragile at
-140:03this point what do we actually need and
-140:06the answer is a configuration language
-140:14but I think that there might be some
-140:17immediate benefit these ideas of
-140:20object-oriented design where you have
-140:23existing systems that because it would
-140:26nature
-140:27the islands of automation approach have
-140:29gotten tremendous ly complex and you
-140:32need to be able to characterize various
-140:35things possibly the concept of objects
-140:38to help you do that and to help them
-140:40understand what are the objects of one
-140:43of the Linc
-140:46right well I'm trying to think of it was
-140:51Rudolph's irken that said you can't if
-140:54you want to be a piano player you should
-140:55spend half of your time reading books
-140:57and his his point was is that if you
-141:02spend all of your time just learning to
-141:04move your fingers you have not absorbed
-141:07any contact the context necessary to
-141:09play any real piece of music that
-141:11there's there's something else besides
-141:13the practical application of the of the
-141:16technique and I think that the somebody
-141:18was asking me at the break it was a very
-141:21good question actually which is and the
-141:26it had to do with she doesn't sounds
-141:30like objects make you do a lot of design
-141:33and anyway but you know it wasn't said
-141:37stupidly at all it's just said isn't
-141:40that hard and I said yes it is hard and
-141:43it's hard whether you've got objects or
-141:45not the main reason is that objects
-141:48provide both an excuse for designing and
-141:51they also give you a framework for
-141:52holding the design every little bit of
-141:55design you do you get rewarded in an
-141:57object-oriented system for having done
-141:58it you really get rewarded where's it's
-142:02hard to get rewarded in a in a procedure
-142:04data structure system because often the
-142:07design has nothing to hang itself on
-142:10there can be local good things but you
-142:12can't propagate the design forward the
-142:15way you can in an object-oriented system
-142:21I don't know because I haven't hung most
-142:25you know Edward de Bono's says the
-142:27problem with most American companies is
-142:29that when they get in trouble they
-142:30redouble their efforts so you know the
-142:36idea is that we're basically too
-142:37industrious for our own good and once we
-142:39learn a technique we tend to put our
-142:41head down and just fight like mad rather
-142:43than trying to smart our way out of it
-142:45like I said I particularly efference to
-142:49me I had actually seen these techniques
-142:50and actually programs using some of
-142:52these techniques for five years for a
-142:54period between 1961 and 1966 before
-143:01Simula hit me on the head and hit me on
-143:04the head just because at that point I
-143:06had a problem that was much harder than
-143:08I wanted to program it was the first
-143:10time I was willing to actually see that
-143:13was when I was going through insane
-143:14minutes and I said to myself holy cow
-143:17this is so you know there's just nothing
-143:20here all I have to do is this and that
-143:21I'm done you know all of these things
-143:25fall in I was actually programmed in the
-143:27game of space war you know which is one
-143:30of the first video games but it wasn't
-143:31even a video game back in the in the 60s
-143:34and they're all of these it's very hard
-143:35to do in an ordinary language because
-143:37you have all of these spaceships and you
-143:39have planets and you have torpedoes and
-143:42when I was looking at Simula I was
-143:44trying to get figure a way out of doing
-143:48this I didn't want to do it in 30 pages
-143:50of alcohol or so and I was trying to
-143:53figure out a way and all of a sudden it
-143:55occurred to me that every single thing
-143:56in space war and Simula was the same
-143:59thing the only thing was different was
-144:01the costume they were wearing the
-144:03planets were the same the spaceships
-144:05were the same the torpedoes were the
-144:07same there was like one line of code
-144:08difference in each of their behavior and
-144:11they all had to obey Newton's laws they
-144:13all were interacting with each others in
-144:15exactly the same way it was trivial and
-144:17I wrote that program and a half a page
-144:19of code and I never looked back since
-144:21because the you know the that is the
+
+### Folding up of complexity
 144:25thing if you don't find this folding up
 144:27of complexity into simplicity then
 144:32either you're working on a truly hard
@@ -634,6 +278,8 @@ small
 145:40that kernel that's a very modern way of
 145:42looking at things and it's a terrific
 145:44way of thinking about doing stuff
+
+### Object-oriented database server
 145:56okay yeah
 146:00that's a very good question
 146:03some of these idea a relational database
@@ -718,6 +364,7 @@ small
 149:33cascade them and so forth and all of
 149:35those things are being done right at
 149:38this moment with object-oriented servers
+
 149:47excuse me yeah I think for also because
 149:59the the tutorial it's going to happen in
 150:01a couple of weeks is going to be one of
@@ -791,7 +438,9 @@ small
 152:56interested in why this stuff is powerful
 152:58that's an example of where the power of
 153:02it is actually concentrated and used by
-153:04some design thinking here's another one
+153:04some design thinking 
+
+here's another one
 153:08most object-oriented languages don't
 153:12have a complete model so for instance
 153:16when Simula for instance has classes so
@@ -901,44 +550,3 @@ small
 159:18distribute that idea over the entire
 159:20universe with just a few changes in a
 159:24system like this
-159:25well let's I think we're about done let
-159:28me let me give you a one of our favorite
-159:33stories and as a winch and Winston
-159:38Churchill story widget Winston Churchill
-159:41jokes always have them at a party after
-159:44a bunch of whiskeys
-159:46and I'm sure everybody knows the one of
-159:49the he was incredibly drunk and a woman
-159:53came up to him at two o'clock in the
-159:55morning and said mr. Churchill you're
-159:57disgustingly drunk and he looked at her
-160:01said and you Madame are indescribably
-160:03ugly but in the morning I'll be
-160:05indisputably sober
-160:11so this particular this particular
-160:14Churchill joke a little earlier on the
-160:16party he hadn't had quite as many
-160:18whiskey's and the hostess of the party
-160:20came over to him quite agitated and said
-160:23mr. Churchill I'm just really upset I
-160:26don't know what to do I saw a famous
-160:28Earl over there steal some of my silver
-160:32salt shakers what should I do
-160:33Churchill thought for a minute and stuck
-160:35his cigar in his mouth and went over to
-160:38the Earl along the way he took a salt
-160:40shaker himself and put it in his pocket
-160:42and we got over to the Earl took it out
-160:45of his pocket and said I think we've
-160:47been noticed perhaps we should put these
-160:48back so that's my version for why we won
-160:54World War two in other words if you want
-160:57to get people to do something to go
-161:00along with you you have to involve them
-161:01in the same conspiracy and
-161:04object-oriented programming is a kind of
-161:07conspiracy that people are just finding
-161:09out about it I hope I've been able to
-161:10involve you in a little bit and I hope
-161:12you will involve others thank you
-161:14[Applause]
