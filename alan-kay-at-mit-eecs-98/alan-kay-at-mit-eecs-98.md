@@ -41,230 +41,14 @@ to do that anyway because as you get more and more complex just things like the 
 everything set up and linked together is such an incredible thing. You really want to start with something that's already
 working and just make it incredibly better over and over again.
 
-so that led
-34:43to a sort of a first pass which we call
-34:46flex and since nobody ever does anything
-34:50just for beauty this flex language came
-34:57out as a reaction to a project that I
-35:01got involved with which is the build a
-35:04little desktop computer with my friend
-35:06Edie Cheadle and that's what it looked
-35:09like that's actually a picture from its
-35:10own display and it had kind of an
-35:13object-oriented version of what peter
-35:15deutsch had done and it had windows was
-35:19far from the first system with windows
-35:21sketchpad had a window I was one of the
-35:24first with multiple windows and it had a
-35:27semi graphical interface and it was a
-35:32desktop computer for very special desks
-35:35namely those made out of steel so
-35:38weighed about 400 pounds and so the
-35:43thing is that the integrated circuits
-35:44back then were so small they only had
-35:49fact we can look on this chart here see
-35:53that back in 1967 there was maybe a
-35:58couple of hundred elements on an
-36:00integrated circuit and we built that
-36:01machine because there was a rumor of a
-36:03512 bit ROM the general Instruments was
-36:07going to make but we also knew about
-36:11Moore's writings he started writing in
-36:1365 and we
-36:15a lot of faith that what he said was
-36:16going to happen if you're interested
-36:18this is Moore's original graph plotted
-36:21out where you said it's going to be a
-36:22factor of two every year and later he
-36:28said well it's not going to be worse
-36:29than a factor of two every two years
-36:31that's that plot and here's what
-36:33happened to ram up until now so that's
-36:38pretty good it's about as good as having
-36:41Jupiter be where it's supposed to be
-36:43after seven years voyage and it's
-36:48interesting that Deccan and IBM knew all
-36:50about this but thought that that would
-36:52give them more margins on their
-36:53mainframes let's sort of pink thinking
-36:59then pretty much thirty years ago to the
-37:04day right now I came out here because I
-37:08had heard from Marvin Minsky about
-37:10Seymour papper and what he was doing
-37:11with children I went out to bridge
-37:14school and saw that what Seymour was
-37:19doing he wasn't just fooling around with
-37:20the kids
-37:21he wasn't just giving them games to do
-37:26he was actually teaching them advanced
-37:28mathematics in a way that was really fun
-37:30for them and one of the typical programs
-37:33and logo back then was to make a circle
-37:36repeat over and over again go a little
-37:38internal little and I think everybody
-37:41here is supposed to take enough math to
-37:43realize that that's the differential
-37:45equation of a circle in curvature
-37:49coordinates or inertial coordinates
-37:52facti what he's saying here is the
-37:56curvature of this is some constant and
-37:58if you have a constant curvature you're
-38:00always going to get a circle and jaysus
-38:02that's an unbelievable and so here are
-38:04the kids picking those numbers and
-38:07getting a little turtle to do this this
-38:11completely blew my mind and going back
-38:16on the plane to Utah I started sketching
-38:18this machine because I was thinking this
-38:20is the best what Seymour is doing is the
-38:22best idea anybody's had this
-38:24half-century because he realizes there's
-38:28something special
-38:29about the computer that's connected with
-38:30thinking and a way to get that something
-38:34special out to the general world is not
-38:36to try and teach adults that because
-38:38they will be too recalcitrant they'll
-38:43try and turn it back into pink things
-38:47like paper documents but what Seymour is
-38:52doing is realizing Yap but way to do
-38:54this is teach the powerful ideas to the
-38:55kids and you might cut out a hundred
-38:58years of bumbling towards what this new
-39:02set of ideas is and this just just
-39:08absolutely blew my mind I've been
-39:10working on the Danny Barbara once said
-39:12the do's do we have to pay for having
-39:13fun with computers is that we have to
-39:16work on our first big project for the
-39:18rest of our life now because I also
-39:29liked history I knew something
-39:31interesting about the last time a medium
-39:34like this appeared and that is that
-39:37there were 371 hand written manuscripts
-39:43in the Vatican Library in 1400 that was
-39:46one of the largest libraries in Europe
-39:47how do I know it was 371 because you can
-39:50count 371 things reliably there was so
-39:55few of them Gutenberg and they cost
-39:58millions of bucks apiece and today's
-40:00money Gutenberg came along $60,000 so in
-40:04the way I was thinking of it oh yeah
-40:05that's kind of a workstation that's like
-40:07my Flex machine thing and then Aldous 50
-40:11years later around 14.95 to 1500 came up
-40:14with a little book why is it this size
-40:20same size that books are today it's
-40:22unbelievable that the size of books
-40:25hasn't changed that's because the size
-40:28the books are today is the size that
-40:30saddlebags were in Venice in the Year
-40:331495 because Elvis actually went out and
-40:35measured them because the first 40 books
-40:38he published from his press were called
-40:40the portable library
-40:42and they were not about religion like
-40:44the Gutenberg Bible was but they were
-40:45about philosophy but then something
-40:48unusual happened that the result of this
-40:51revolution didn't start to bear fruit
-40:54for hundreds of years wasn't really
-40:58until the 17th century that we see it
-41:02bearing fruit in science and to the 18th
-41:05century in politics that is a long lag
-41:08and so the thing that several of us
-41:12thought about in the 60s was wow we're
-41:15going to be able to get through this
-41:16stage also in 50 years Moore's law says
-41:20we can do a Dynabook before the year
-41:222000 in fact we thought we'd be able to
-41:25do it before the year 1985 and the
-41:29question is is are we going to have to
-41:31wait another 100 or 200 years
-41:33for the fruits of these new ways of
-41:37thinking to actually spread out into the
-41:39general population and the thought was
-41:42well let's just do let's really pay
-41:45attention to what Seymour is saying and
-41:48see if we can get it out earlier so
-41:51Xerox PARC came along just at the right
-41:54time ARPA funding had gotten muzzled
-41:57because of the Mansfield amendment and
-41:59so Taylor's skimmed off a lot of people
-42:02from the ARPA projects around and this
-42:07was a proposal to try and work on a
-42:10machine it looked kind of like this and
-42:14there's a big problem now we're talking
-42:17about khat we're not just talking about
-42:18a little machine for kids we're talking
-42:20about something cosmic something big the
-42:23ARPANET was being worked on back then
-42:26there's this huge problem which is
-42:29nobody knew how to build scalable
-42:31software or indeed scalable almost
-42:33anything else except it look like the
-42:35ARPANET was going to scale it looked
-42:38like it was going to scale because it
-42:39had a message passing architecture just
-42:44as the nascent
-42:45object systems that we're working on and
-42:48we had this really good set of examples
-42:51of the difference between something like
-42:52system/360 now nowadays you'd fill in
-42:55Windows 98
-42:57or almost any piece of Microsoft
-42:59software but basically well that's like
-43:07getting applauded for saying the devil
-43:09is not nice nothing controversial there
-43:21but the thing is that all of these
-43:24software systems done by hand tools and
-43:26weak ideas tend to resemble pyramids
-43:29that is their big garbage dumps that
-43:32somebody has plastered over with
-43:34limestone and we had some wonderful
-43:38examples I was a big fan of building
-43:41complex structures so I knew that the
-43:42Empire State Building had actually been
-43:44physically fabricated in less than 11
-43:47months by less than 3,000 people I also
-43:50knew the Empire State Building from the
-43:52time they decided to do it to the time
-43:53they occupied the building was less than
-43:5520 months okay and when I thought about
-43:59that I was thinking gee whiz we could
-44:01never we couldn't must we couldn't
-44:04organize 30 30 people 300 people or
-44:063,000 people to do anything of any
-44:10complexity and software somebody held a
-44:12gun to our head we just don't have the
-44:17way of doing it and so this is when
-44:21these kind of situations are when late
-44:24binding starts becoming a more and more
-44:27important idea and if you think about it
-44:31almost every advance in software has
-44:33been a kind of late binding and I
-44:35believe this statement is just as true
-44:37today as it was back then as that is we
-44:39just don't know enough we don't have an
-44:42engineering discipline and so even when
-44:44we're doing something that looks like
-44:46the project that we did the last time it
-44:48turns out to have a huge learning curve
-44:51and the problem is if we're using an
-44:54early bound system back in the old days
-44:57like algal or Fortran or COBOL or
-45:00machine code nowadays like C or C++ just
-45:05as you start learning something the
-45:07system has gotten too rigid to be
-45:09reformulate
-45:10so you say no we have to get the
-45:13deadline done let's leave those ideas
-45:16until later those ideas ever get in
-45:19forget it
+#### Late binding
+These kind of situations are when late binding starts becoming a more and more important idea. And if you think about it
+almost every advance in software has been a kind of late binding and I believe this statement is just as true today as it was back then, that is we just don't know enough, we don't have an engineering discipline and so even when we're doing something that looks like the project that we did the last time, it turns out to have a huge learning curve and the problem is if we're using an early bound system, back in the old days like Algol or Fortran or COBOL or machine code, nowadays like C or C++, just as you start learning something, the system has gotten too rigid to be reformulatable, so you say, no we have to get the deadline done, let's leave those ideas until later. Do those ideas ever get in? Forget it.
+
+#### There are Maxwell's equations for computers
 45:21so coming back to Lisp here so here's
 45:26the other great two great programming
 45:28language conceptions of the 60s Simula
-45:31and Lisp and Lisp was really early
 45:33McCarthy wrote some of his first stuff
 45:36about how to do this in 59 and actually
 45:44I brought one along I won't admit how
@@ -293,7 +77,9 @@ so that led
 47:01great about Lisp and add this biological
 47:05ecological way of doing things to it
 47:07you'd have something pretty darn
-47:08interesting and so the second crossroads
+47:08interesting and 
+
+so the second crossroads
 47:12was kind of taking this flex machine
 47:14which is not very Lisp like and adding
 47:16some Lisp and logo ideas to it to get a
