@@ -1,4 +1,4 @@
-### [Could Computing Be Simpler Than It Seems To Be](https://www.youtube.com/watch?v=aqotNrIp-Ik)
+### [Could Computing Be Simpler Than It Seems To Be?](https://www.youtube.com/watch?v=aqotNrIp-Ik)
 by Alan Kay  
 on November 27, 2006  
 at Intel  
