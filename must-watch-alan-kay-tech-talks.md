@@ -9,4 +9,5 @@
 [A Conversation with CMU Faculty & Students](https://www.youtube.com/watch?v=PFc379hu--8)  
 [BCS Mac Awards Banquet and MacTech Wizards Meeting](https://www.youtube.com/watch?v=T_nciE3OBjI)  
 [Processors in Programming Languages](https://www.youtube.com/watch?v=0Js_7UxiUR4)  
-[Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)
+[Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)  
+[Programming and Scaling](https://www.youtube.com/watch?v=YyIQKBzIuBY)
