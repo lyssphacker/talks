@@ -11,3 +11,8 @@
 [Processors in Programming Languages](https://www.youtube.com/watch?v=0Js_7UxiUR4)  
 [Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)  
 [Programming and Scaling](https://www.youtube.com/watch?v=YyIQKBzIuBY)
+
+#### Related
+[Ian Piumarta - To trap a better mouse](https://www.youtube.com/watch?v=EGeN2IC7N0Q)  
+[Late-bound object lambda architectures](https://www.youtube.com/watch?v=BBJWLjS0_WE)  
+[Building Your Own Dynamic Language](https://www.youtube.com/watch?v=cn7kTPbW6QQ)
