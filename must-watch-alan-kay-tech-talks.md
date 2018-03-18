@@ -10,7 +10,8 @@
 [BCS Mac Awards Banquet and MacTech Wizards Meeting](https://www.youtube.com/watch?v=T_nciE3OBjI)  
 [Processors in Programming Languages](https://www.youtube.com/watch?v=0Js_7UxiUR4)  
 [Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)  
-[Programming and Scaling](https://www.youtube.com/watch?v=YyIQKBzIuBY)
+[Programming and Scaling](https://www.youtube.com/watch?v=YyIQKBzIuBY)  
+[Joe Armstrong interviews Alan Kay](https://www.youtube.com/watch?v=fhOHn9TClXY)  
 
 #### Related
 [Ian Piumarta - To trap a better mouse](https://www.youtube.com/watch?v=EGeN2IC7N0Q)  
