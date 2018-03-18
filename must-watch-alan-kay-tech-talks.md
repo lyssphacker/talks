@@ -15,4 +15,8 @@
 #### Related
 [Ian Piumarta - To trap a better mouse](https://www.youtube.com/watch?v=EGeN2IC7N0Q)  
 [Late-bound object lambda architectures](https://www.youtube.com/watch?v=BBJWLjS0_WE)  
-[Building Your Own Dynamic Language](https://www.youtube.com/watch?v=cn7kTPbW6QQ)
+[Building Your Own Dynamic Language](https://www.youtube.com/watch?v=cn7kTPbW6QQ)  
+
+[Bret Victor - The Future of Programming](https://www.youtube.com/watch?v=IGMiCo2Ntsc)  
+[Bret Victor - Stop Drawing Dead Fish](https://www.youtube.com/watch?v=ZfytHvgHybA)  
+
