@@ -13,6 +13,7 @@
 [Programming and Scaling](https://www.youtube.com/watch?v=YyIQKBzIuBY)  
 [Joe Armstrong interviews Alan Kay](https://www.youtube.com/watch?v=fhOHn9TClXY)  
 [Turing Award Lecture](https://www.youtube.com/watch?v=ymF94cFfzUQ)  
+[Programming Languages & Programming](https://www.youtube.com/watch?v=prIwpKL57dM)  
 
 #### Related
 [Ian Piumarta - To trap a better mouse](https://www.youtube.com/watch?v=EGeN2IC7N0Q)  
