@@ -14,6 +14,7 @@
 [Joe Armstrong interviews Alan Kay](https://www.youtube.com/watch?v=fhOHn9TClXY)  
 [Turing Award Lecture](https://www.youtube.com/watch?v=ymF94cFfzUQ)  
 [Alan Kay at IRC Conference](https://www.youtube.com/watch?v=_fznp9qBJeg)  
+[Alan Kay @ SAP](https://www.youtube.com/watch?v=vXjpA9gFX5c)  
 
 #### Related
 [Ian Piumarta - To trap a better mouse](https://www.youtube.com/watch?v=EGeN2IC7N0Q)  
