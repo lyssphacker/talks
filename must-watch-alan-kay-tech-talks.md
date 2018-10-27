@@ -15,6 +15,7 @@
 [Turing Award Lecture](https://www.youtube.com/watch?v=ymF94cFfzUQ)  
 [Alan Kay at IRC Conference](https://www.youtube.com/watch?v=_fznp9qBJeg)  
 [Alan Kay @ SAP](https://www.youtube.com/watch?v=vXjpA9gFX5c)  
+[The Ceremony of Awarding the Honorary Doctorate of Kyoto University](https://www.youtube.com/watch?v=tp9VbtLn2Jw)  
 
 #### Related
 [Ian Piumarta - To trap a better mouse](https://www.youtube.com/watch?v=EGeN2IC7N0Q)  
